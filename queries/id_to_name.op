@@ -1,0 +1,3 @@
+[out:csv(name:en,name;false;",")][timeout:3600];
+rel(id:#ID);
+out;
