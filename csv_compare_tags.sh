@@ -1,16 +1,43 @@
 #!/bin/bash
 
-wget -qO /tmp/all_country_ids.txt --post-file=queries/all_country_ids.op \
-  "$1/api/interpreter"
+#defaults
+server=${server:-"https://lz4.overpass-api.de"}
+tag1=${tag1:-"waterway=riverbank"}
+tag2=${tag2:-"water=river"}
 
-echo "name,name(local),riverbank,river"
+#command-line arguments
+while [ $# -gt 0 ]; do
+
+   if [[ $1 == *"--"* ]]; then
+        param="${1/--/}"
+        declare $param="$2"
+   fi
+
+  shift
+done
+
+date=`date`
+
+echo "using overpass server $server/api/interpreter"
+echo "comparing $tag1 to $tag2 in each country"
+echo "Start processing at $date"
+echo
+
+wget -qO /tmp/all_country_ids.txt --post-file=queries/all_country_ids.op \
+  "$server/api/interpreter"
+
+echo "iso_a2,name,name(local),$tag1,$tag2"
 
 while read p; do
   base_area=3600000000
   area_id=`expr $base_area + $p`
-  query=`sed "s/#AREA/$area_id/g" queries/count_riverbank.op`
+  query=`sed "s/#AREA/$area_id/g; s/#TAG1/$tag1/g; s/#TAG2/$tag2/g" queries/count_tags.op`
   namequery=`sed "s/#ID/$p/g" queries/id_to_name.op`
-  counts=$(wget -qO- --post-data="$query" "$1/api/interpreter")
-  name=$(wget -qO- --post-data="$namequery" "$1/api/interpreter")
+  counts=$(wget -qO- --post-data="$query" "$server/api/interpreter")
+  name=$(wget -qO- --post-data="$namequery" "$server/api/interpreter")
   echo "$name,$counts"
 done </tmp/all_country_ids.txt
+
+date=`date`
+echo
+echo "Finish processing at $date\n"
