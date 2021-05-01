@@ -5,4 +5,4 @@ Currently, these scripts only handle river/riverbank comparison.  However, the i
 
 Usage:
 
-	./country_list.sh <overpass server url> | tee <output file>.csv
+	./csv_compare_tags.sh <overpass server url> | tee <output file>.csv
