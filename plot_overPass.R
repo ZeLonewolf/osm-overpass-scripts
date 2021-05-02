@@ -48,9 +48,9 @@ args = commandArgs(trailingOnly = TRUE)
 
 # Load overpass data
     if (opt$input == "-" || is.null(opt$input)) {
-        overpass <- read_csv(file("stdin"))
+        overpass <- read_csv(file("stdin"), na = "")
     } else {
-        overpass <- read_csv(opt$input)
+        overpass <- read_csv(opt$input, na = "")
     }
 
 # Get names of the tags
