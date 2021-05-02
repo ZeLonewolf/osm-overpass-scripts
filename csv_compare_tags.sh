@@ -23,8 +23,8 @@ date=`date`
 #echo "Start processing at $date"
 #echo
 
-#wget -qO /tmp/all_country_ids.txt --post-file=queries/all_country_ids.op \
-#  "$server/api/interpreter"
+wget -qO /tmp/all_country_ids.txt --post-file=queries/all_country_ids.op \
+  "$server/api/interpreter"
 
 echo "iso_a2,name,$tag1,$tag2"
 
