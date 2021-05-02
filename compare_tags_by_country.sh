@@ -4,7 +4,7 @@
 server=${server:-"http://lz4.overpass-api.de"}
 tag1=${tag1:-"waterway=riverbank"}
 tag2=${tag2:-"water=river"}
-plot=${plot:-"output.png"}
+color=${color:-"GR"}
 tmpcsv="/tmp/all_country_ids.csv"
 throttle=5
 
@@ -44,6 +44,8 @@ csvoutput="iso_a2,name,$tag1,$tag2"
 csvlines=`wc -l < "$tmpcsv"`
 
 echo "processing $csvlines countries"
+echo "@[iso,name]: $tag1, $tag2"
+echo "------------------------------"
 
 while read p; do
   base_area=3600000000
@@ -63,19 +65,19 @@ while read p; do
   name=
   counts=
 
-  echo -e "$csvoutput" > out.csv
+  #echo -e "$csvoutput" > out.csv
 
 done <"$tmpcsv"
 
 csvoutput="${csvoutput}\n"
 
-if [ -z "$chart" ]
+if [ ! -z "$map" ]
 then
-  echo -e "$csvoutput" | ./plot_overPass.R --tag1 "$tag1" --tag2 "$tag2" -o "$chart"
-  printf "Saved map: ${YELLOW}${chart}${NC}"
+  echo -e "$csvoutput" | ./plot_overPass.R --tag1 "$tag1" --tag2 "$tag2" -o "$map" -c "$color"
+  printf "Saved map: ${YELLOW}${map}${NC}"
 fi
 
-if [ -z "$csv" ]
+if [ ! -z "$csv" ]
 then
   echo -e "$csvoutput" > "$csv"
   printf "Saved csv: ${YELLOW}${csv}${NC}"
@@ -83,4 +85,6 @@ fi
 
 date=`date`
 echo
-echo "Finish processing at $date\n"
+echo "Finish processing at $date"
+printf 'Runtime: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
+
