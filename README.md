@@ -10,3 +10,11 @@ Usage:
 
 Requires:
     R https://cran.r-project.org/
+
+## Installation
+
+Install the following pre-requisites:
+* R script
+
+Run:
+	sudo ./install.R
