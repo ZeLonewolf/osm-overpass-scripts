@@ -11,6 +11,9 @@ Usage:
 Requires:
 * Rscript https://cran.r-project.org/
 
+### Other options
+* --throttle <number> - number of seconds to pause between overpass requests.  If you are running this against a private overpass instance, this can safely be set to zero to speed up processing.
+
 ## Installation
 
 Install the following pre-requisites:

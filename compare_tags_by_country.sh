@@ -6,6 +6,7 @@ tag1=${tag1:-"waterway=riverbank"}
 tag2=${tag2:-"water=river"}
 plot=${plot:-"output.png"}
 tmpcsv="/tmp/all_country_ids.csv"
+throttle=5
 
 #color output codes
 YELLOW='\033[1;33m'
@@ -51,11 +52,11 @@ while read p; do
   namequery=`sed "s/#ID/$p/g" queries/id_to_name.op`
   while [ -z "$counts" ]; do
     counts=$(wget -qO- --post-data="$query" "$server/api/interpreter")
-    sleep 5
+    sleep "$throttle"
   done
   while [ -z "$name" ]; do
     name=$(wget -qO- --post-data="$namequery" "$server/api/interpreter")
-    sleep 5
+    sleep "$throttle"
   done
   csvoutput="${csvoutput}\n${name},${counts}"
   echo "[$name]: $counts"
