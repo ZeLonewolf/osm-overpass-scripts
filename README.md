@@ -5,16 +5,16 @@ Currently, these scripts only handle tag comparison.  However, the intent is to 
 
 Usage:
 
-	./csv_compare_tags.sh --server <overpass server url> --tag1 "waterway=river" --tag2 "water=river" | tee <output file>.csv
-	./csv_compare_tags.sh --server <overpass server url> --tag1 "waterway=river" --tag2 "water=river" | ./plot_overPass.R [-o output.png|.jpg|.pdf]
+	./compare_tags_by_country.sh --server <overpass server url> --tag1 "waterway=river" --tag2 "water=river" --map <output file>.png
+	./compare_tags_by_country.sh --server <overpass server url> --tag1 "waterway=river" --tag2 "water=river" --csv <output file>.csv
 
 Requires:
-    R https://cran.r-project.org/
+* Rscript https://cran.r-project.org/
 
 ## Installation
 
 Install the following pre-requisites:
-* R script (see installation instructions for: [Ubuntu 20.04](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04 "Ubuntu 20.04 R installation instructions")
+* R script (see installation instructions for: [Ubuntu 20.04](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04 "Ubuntu 20.04 R installation instructions"))
 * libudunits2-dev
 
 Run:
