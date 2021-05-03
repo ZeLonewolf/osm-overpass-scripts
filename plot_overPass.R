@@ -92,7 +92,7 @@ args = commandArgs(trailingOnly = TRUE)
                     scale_fill_viridis_c(option = "viridis",
                                          name = "%",
                                          limits = c(0,100)) +
-                    labs(title = paste0("Coutry preference for <span style = 'color:#DCE319FF;'>**", tag1, "**</span>
+                    labs(title = paste0("Country preference for <span style = 'color:#DCE319FF;'>**", tag1, "**</span>
                               vs. <span style = 'color:#482677FF;'>**", tag2, "**</span>"),
                      caption = Sys.Date())
     } else if (opt$color == "P") {
@@ -100,7 +100,7 @@ args = commandArgs(trailingOnly = TRUE)
                     scale_fill_viridis_c(option = "plasma",
                                          name = "%",
                                          limits = c(0,100)) +
-                    labs(title = paste0("Coutry preference for <span style = 'color:#F7E225FF;'>**", tag1, "**</span>
+                    labs(title = paste0("Country preference for <span style = 'color:#F7E225FF;'>**", tag1, "**</span>
                               vs. <span style = 'color:#2D0594FF;'>**", tag2, "**</span>"),
                      caption = Sys.Date())
     } else {
@@ -111,7 +111,7 @@ args = commandArgs(trailingOnly = TRUE)
                                          high = "red3",
                                          midpoint = 50,
                                          limits = c(0,100)) +
-                    labs(title = paste0("Coutry preference for <span style = 'color:red3;'>**", tag1, "**</span>
+                    labs(title = paste0("Country preference for <span style = 'color:red3;'>**", tag1, "**</span>
                               vs. <span style = 'color:darkgreen;'>**", tag2, "**</span>"),
                      caption = Sys.Date())
     }
