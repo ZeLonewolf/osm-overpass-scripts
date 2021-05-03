@@ -85,7 +85,7 @@ args = commandArgs(trailingOnly = TRUE)
                     scale_y_continuous(breaks = c(-50, 0 , 50)) +
                     theme_minimal() +
                     theme( plot.title.position = "plot",
-                          plot.title = element_markdown())
+                           plot.title = element_markdown(size = 11))
     
     if (opt$color == "V"){
         plot <- plot +
@@ -94,7 +94,7 @@ args = commandArgs(trailingOnly = TRUE)
                                          limits = c(0,100)) +
                     labs(title = paste0("Country preference for <span style = 'color:#DCE319FF;'>**", tag1, "**</span>
                               vs. <span style = 'color:#482677FF;'>**", tag2, "**</span>"),
-                     caption = Sys.Date())
+                         caption = Sys.Date())
     } else if (opt$color == "P") {
         plot <- plot +
                     scale_fill_viridis_c(option = "plasma",
@@ -102,7 +102,7 @@ args = commandArgs(trailingOnly = TRUE)
                                          limits = c(0,100)) +
                     labs(title = paste0("Country preference for <span style = 'color:#F7E225FF;'>**", tag1, "**</span>
                               vs. <span style = 'color:#2D0594FF;'>**", tag2, "**</span>"),
-                     caption = Sys.Date())
+                         caption = Sys.Date())
     } else {
         plot <- plot +
                     scale_fill_gradient2(name = "%",
@@ -113,7 +113,7 @@ args = commandArgs(trailingOnly = TRUE)
                                          limits = c(0,100)) +
                     labs(title = paste0("Country preference for <span style = 'color:red3;'>**", tag1, "**</span>
                               vs. <span style = 'color:darkgreen;'>**", tag2, "**</span>"),
-                     caption = Sys.Date())
+                         caption = Sys.Date())
     }
         
 # Save output figure
