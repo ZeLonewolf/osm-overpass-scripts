@@ -26,8 +26,8 @@ done
 date=`date`
 
 echo
-printf "using overpass server ${YELLOW}${server}/api/interpreter${NC}\n"
-printf "comparing ${YELLOW}${tag1}${NC} to ${YELLOW}${tag2}${NC} in each country\n"
+printf "Using overpass server ${YELLOW}${server}/api/interpreter${NC}\n"
+printf "Comparing ${YELLOW}${tag1}${NC} to ${YELLOW}${tag2}${NC} in each country\n"
 echo "Start processing at $date"
 echo
 
@@ -74,13 +74,13 @@ csvoutput="${csvoutput}\n"
 if [ ! -z "$map" ]
 then
   echo -e "$csvoutput" | ./plot_overPass.R --tag1 "$tag1" --tag2 "$tag2" -o "$map" -c "$color"
-  printf "Saved map: ${YELLOW}${map}${NC}"
+  printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
 
 if [ ! -z "$csv" ]
 then
   echo -e "$csvoutput" > "$csv"
-  printf "Saved csv: ${YELLOW}${csv}${NC}"
+  printf "Saved csv: ${YELLOW}${csv}${NC}\n"
 fi
 
 date=`date`
