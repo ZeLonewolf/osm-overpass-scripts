@@ -17,7 +17,7 @@ Requires:
     --tag2              - tag for comparison (defalut: water=river)
     --csv               - output file for counts in csv format
     --map               - file name for map plot. Supported formats: .png, .jpg, .pdf
-    --color             - color scheme for plot. [green-red: GR, viridis: V, plasma: P] (default: GR)
+    --color             - color scheme for plot. [green-red: GR, blue-red: BR, viridis: V, plasma: P] (default: GR)
     --throttle <int>    - number of seconds to pause between overpass requests.  If you are running this against a private
                           overpass instance, this can safely be set to zero to speed up processing. (default: 5)
 
