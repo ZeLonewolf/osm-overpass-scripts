@@ -3,6 +3,11 @@ Shell scripts for manipulating OpenStreetMap overpass queries
 
 Currently, these scripts only handle tag comparison.  However, the intent is to build up a library of generic scripts that can be used for tag comparisons and statistics generation.
 
+## compare_tags_by_country.sh
+| green-red | viridis | plasma | blue-red |
+| --------- | ------- | ------ | -------- |
+| <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test1.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test2.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test3.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test4.png" width="170"> |
+
 Usage:
 
 	./compare_tags_by_country.sh --server <overpass server url> --tag1 "waterway=river" --tag2 "water=river" --map <output file>.png
