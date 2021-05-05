@@ -6,7 +6,7 @@ Currently, these scripts only handle tag comparison.  However, the intent is to 
 ## compare_tags_by_country.sh
 | green-red | viridis | plasma | blue-red |
 | --------- | ------- | ------ | -------- |
-| <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test1.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test2.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test3.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/test4.png" width="170"> |
+| <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/test1.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/test2.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/test3.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/test4.png" width="170"> |
 
 Usage:
 
