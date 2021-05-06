@@ -27,7 +27,9 @@ Requires:
                           overpass instance, this can safely be set to zero to speed up processing. (default: 5)
 
 ## get_tag_density_map.sh
-| <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/testdens1.png" width="170"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/master/img/testdens2.png" width="170"> |
+| no borders | w/ borders |
+| ----| ---- |
+| <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/testdens1.png" width="350"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/testdens2.png" width="350"> |
 
 Usage:
 
