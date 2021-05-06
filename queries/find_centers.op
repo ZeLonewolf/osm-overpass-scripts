@@ -1,3 +1,6 @@
 [out:csv(::lat,::lon;false;",")]#BBOX[timeout:3600];
-nw[#TAG];
+(
+  node[#TAG];
+  way[#TAG];
+);
 out center;
