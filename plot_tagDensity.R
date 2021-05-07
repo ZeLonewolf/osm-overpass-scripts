@@ -97,7 +97,7 @@ args = commandArgs(trailingOnly = TRUE)
                           legend.title = element_markdown())
                                 
     if (anyNA(bbox)) {
-        print("Wrong format of bbox or no bbox set. Plotting for whole world.")
+        print("No bbox set. Plotting for whole world. (If bbox was set check the format lat,lon,lat,lon")
         plot <- plot +
                     coord_sf(expand = FALSE, ylim = c(-55, 90)) +
                     scale_y_continuous(breaks = c(-50, 0 , 50))
