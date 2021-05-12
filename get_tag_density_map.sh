@@ -132,11 +132,14 @@ while [ "$#" -gt 0 ]; do
 
     # Parse xml to csv (we can't do out:csv because of missing error messages in csv queries)
     out=$(echo "$out" | grep "center" | cut -f 2 -f 4 -d '"' | tr '"' ',')
-    csvoutput="${csvoutput}\n${out}"
 
-    if [ ! -z "$csv" ]; then echo -e "${out}\n" >> "$csv"; fi
+    if [ ! $(echo -n "$out" | wc -l) -eq 0 ]; then
+        csvoutput="${csvoutput}\n${out}"
 
-    echo "$out" | wc -l
+        if [ ! -z "$csv" ]; then echo -e "${out}\n" >> "$csv"; fi
+    fi
+
+    echo -n "$out" | wc -l
     sleep "$throttle"
     shift
 done
