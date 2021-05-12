@@ -92,7 +92,7 @@ if [ ! -z "$csv" ]; then echo -e "${csvoutput}\n" > "$csv"; fi
 set ${q_bbox[@]}        # seting bboxes as parameters to allow queue updating, which is not possible with for-loop
 while [ "$#" -gt 0 ]; do
     b="$1"
-    if [ "$split" -eq 360 ]; then b= ; fi     # When split == 360 remove bbox from query for the whole planet
+    if [ "$split" -eq 360 ]; then b= ; split=0 ; fi     # When split == 360 remove bbox from query for the whole planet
     
     printf "${YELLOW}${b}${NC} "
 
@@ -116,7 +116,8 @@ while [ "$#" -gt 0 ]; do
         # if query failed split square into 4 smaller squares and add to the queue
         printf "${YELLOW}Query failed.${NC} Splitting into smaller areas...\n"
         b_num=$(echo "$b" | cut -f 2 -d ':' | tr -d ']')
-        new_bbox=$(awk -v bbox="$b_num" -v OFS="," 'BEGIN{ split(bbox, coord, ",")
+        new_bbox=$(awk -v bbox="$b_num" -v OFS="," 'BEGIN{ if (bbox == "") bbox = "-90,-180,90,180";
+                                                          split(bbox, coord, ",")
                                                           shift = (coord[3] - coord[1]) / 2
                                                           shift2 = (coord[4] - coord[2]) / 2
                                                           for (i=coord[2]; i<coord[4]; i+=shift2){
@@ -124,8 +125,8 @@ while [ "$#" -gt 0 ]; do
                                                                 print "[bbox:"j, i, j+shift, i+shift2"]"
                                                             }
                                                           }}')
-        set ${new_bbox[@]} "$@"
         shift
+        set ${new_bbox[@]} "$@"
         continue
     fi
 
