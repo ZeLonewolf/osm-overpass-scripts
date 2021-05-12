@@ -7,6 +7,7 @@ binwidth=${binwidth:-1}
 countries=${countries:-"no"}
 throttle=5
 bbox=
+rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
 #color output codes
 YELLOW='\033[1;33m'
@@ -31,39 +32,118 @@ printf "Calculating density of ${YELLOW}${tag}${NC} objects\n"
 echo "Start processing at $date"
 echo
 
+
+
+if [ -z "$bbox" ]; then
+    # use taginfo API to obtain total count of objects
+    if [[ $tag =~ "=" ]]; then
+        taginfo="https://taginfo.openstreetmap.org/api/4/tag/stats?key=${tag%%=*}&value=${tag##*=}"
+    else
+        taginfo="https://taginfo.openstreetmap.org/api/4/key/stats?key=${tag}"
+    fi
+
+    tcount=$(curl -s "$taginfo" \
+                | tr -d '{}[]"' \
+                | cut -f 5 -d "," \
+                | cut -f 2 -d ":")
+    printf "There are ${YELLOW}${tcount}${NC} objects in total\n"
+
+
+    # based on tag count, decide how small planet fragments to make
+    if [ "$tcount" -le 300000 ]; then       # 0.3 mil
+        split=360   # whole planet
+    elif [ "$tcount" -le 1000000 ]; then    # 1 mil
+        split=45    #15
+    elif [ "$tcount" -le 10000000 ]; then   # 10 mil
+        split=30    #10
+    else
+        split=5
+    fi
+                    #split=90    # 8 framents
+                    #split=45    # 32 fragments
+                    #split=30    # 72 fragments
+                    #split=20    # 162 fragments
+                    #split=15    # 288 fragments
+                    #split=10    # 648 fragments
+                    #split=5     # 2592 fragments
+                    #split=2     # 16200 fragments
+                    #split=1     # 64800 fragments
+
+    # split planet into bboxes
+    q_bbox=($(awk -v s="$split" -v OFS="," 'BEGIN { for (i=-180; i<180; i+=s){
+                                                        for (j=-90; j<90; j+=s){
+                                                            print "[bbox:"j, i, j+s, i+s"]"
+                                                        }
+                                                   }
+                                                 }'))
+
+    printf "Processing whole planet in ${YELLOW}${#q_bbox[@]} bbox${NC} areas\n"
+else
+    q_bbox="[bbox:${bbox}]"
+    printf "Processing ${YELLOW}${q_bbox} bbox${NC} area\n"
+fi
+
+
 csvoutput="@lat,@lon"
+if [ ! -z "$csv" ]; then echo -e "${csvoutput}\n" > "$csv"; fi
 
-## Alternative code to query planet in 32 bbox queries
-# if [ -z "$bbox" ]; then
-#     q_bbox=$(awk -v OFS="," 'BEGIN { for (i=-180; i<180; i+=45){
-#                                       for (j=-90; j<90; j+=45){
-#                                          print j, i, j+45, i+45
-#                                       }
-#                                    }
-#                                  }')
-# else
-#     q_bbox=$bbox
-# fi
-#
-# echo "processing whole planet in 32 bbox areas"
-# for b in $q_bbox; do
-#     b="[bbox:$b]"
-#     echo "$b"
-#     query=`sed "g; s/#TAG/$tag/g; s/#BBOX/$b/g" queries/find_centers.op`
-#     csvoutput="${csvoutput}\n$(wget -qO- --post-data="$query" "$server/api/interpreter")"
-#     sleep "$throttle"
-# done
 
-q_bbox=${bbox:+"[bbox:$bbox]"}
-query=`sed "s/#TAG/$tag/g; s/#BBOX/$q_bbox/g" queries/find_centers.op`
 
-csvoutput="${csvoutput}\n$(wget -qO- --post-data="$query" "$server/api/interpreter")"
-csvoutput="${csvoutput}\n"
+set ${q_bbox[@]}        # seting bboxes as parameters to allow queue updating, which is not possible with for-loop
+while [ "$#" -gt 0 ]; do
+    b="$1"
+    if [ "$split" -eq 360 ]; then b= ; fi     # When split == 360 remove bbox from query for the whole planet
+    
+    printf "${YELLOW}${b}${NC} "
+
+    # Check with server if query slot is available now
+    full=
+    while [ $(curl -s "${server}/api/status" | grep -c "now") -eq 0 ] && [ "$rate" -gt 0 ]; do
+        if [ -z "$full" ]; then
+            printf "Waiting for next available slot... "
+            full="yes"
+        fi
+        sleep 1
+    done
+    if [ "$full" = "yes" ]; then printf "Slot found "; fi
+
+    # Run query
+    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" queries/find_centers.op`
+    out="$(wget -qO- --read-timeout=43200 --post-data="$query" "$server/api/interpreter")"
+    
+    # Check if query failed
+    if [ $(echo "$out" | grep -c "remark") -eq 1 ] || [ $(echo "$out" | wc -l) -eq 1 ]; then
+        # if query failed split square into 4 smaller squares and add to the queue
+        printf "${YELLOW}Query failed.${NC} Splitting into smaller areas...\n"
+        b_num=$(echo "$b" | cut -f 2 -d ':' | tr -d ']')
+        new_bbox=$(awk -v bbox="$b_num" -v OFS="," 'BEGIN{ split(bbox, coord, ",")
+                                                          shift = (coord[3] - coord[1]) / 2
+                                                          shift2 = (coord[4] - coord[2]) / 2
+                                                          for (i=coord[2]; i<coord[4]; i+=shift2){
+                                                            for (j=coord[1]; j<coord[3]; j+=shift){
+                                                                print "[bbox:"j, i, j+shift, i+shift2"]"
+                                                            }
+                                                          }}')
+        set ${new_bbox[@]} "$@"
+        shift
+        continue
+    fi
+
+    # Parse xml to csv (we can't do out:csv because of missing error messages in csv queries)
+    out=$(echo "$out" | grep "center" | cut -f 2 -f 4 -d '"' | tr '"' ',')
+    csvoutput="${csvoutput}\n${out}"
+
+    if [ ! -z "$csv" ]; then echo -e "${out}\n" >> "$csv"; fi
+
+    echo "$out" | wc -l
+    sleep "$throttle"
+    shift
+done
+
 
 printf 'Query time: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
 if [ ! -z "$csv" ]; then
-  echo -e "$csvoutput" > "$csv"
   printf "Saved csv: ${YELLOW}${csv}${NC}\n"
 fi
 
@@ -75,6 +155,6 @@ fi
 
 date=`date`
 echo
-echo "Finish processing at $date"
+echo "Finished processing at $date"
 printf 'Runtime: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
