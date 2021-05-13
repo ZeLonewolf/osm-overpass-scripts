@@ -40,7 +40,7 @@ Usage:
      --tag               - tag for object density analysis - nodes and ways only (default: waterway=riverbank)
      --csv               - output file for counts in csv format
      --map               - file name for map plot. Supported formats: .png, .jpg, .pdf
-     --binwidth          - size of square for object counting in degrees. 1 means 1˚x1˚ square (default: 1)
+     --binwidth          - size of square for object counting in degrees. 1 means 1˚x1˚ square (default: 0.5)
      --bbox              - boundig box for area of analysis. minlat,minlon,maxlat,maxlon (default: whole world)
      --countries         - draw countries' borders [yes|no] (default: no)
 

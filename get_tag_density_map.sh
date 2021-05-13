@@ -3,7 +3,7 @@
 #defaults
 server=${server:-"http://lz4.overpass-api.de"}
 tag=${tag:-"waterway=riverbank"}
-binwidth=${binwidth:-1}
+binwidth=${binwidth:-0.5}
 countries=${countries:-"no"}
 throttle=5
 bbox=
@@ -84,8 +84,7 @@ else
 fi
 
 
-csvoutput="@lat,@lon"
-if [ ! -z "$csv" ]; then echo -e "${csvoutput}\n" > "$csv"; fi
+echo -e "@lat,@lon\n" > tag_latlon.tmp
 
 
 
@@ -109,7 +108,7 @@ while [ "$#" -gt 0 ]; do
 
     # Run query
     query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" queries/find_centers.op`
-    out="$(wget -qO- --read-timeout=43200 --post-data="$query" "$server/api/interpreter")"
+    out="$(wget -qO- --read-timeout=9000 --post-data="$query" "$server/api/interpreter")"
     
     # Check if query failed
     if [ $(echo "$out" | grep -c "remark") -eq 1 ] || [ $(echo "$out" | wc -l) -eq 1 ]; then
@@ -134,9 +133,7 @@ while [ "$#" -gt 0 ]; do
     out=$(echo "$out" | grep "center" | cut -f 2 -f 4 -d '"' | tr '"' ',')
 
     if [ ! $(echo -n "$out" | wc -l) -eq 0 ]; then
-        csvoutput="${csvoutput}\n${out}"
-
-        if [ ! -z "$csv" ]; then echo -e "${out}\n" >> "$csv"; fi
+        echo -e "${out}\n" >> tag_latlon.tmp
     fi
 
     echo -n "$out" | wc -l
@@ -147,14 +144,18 @@ done
 
 printf 'Query time: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
-if [ ! -z "$csv" ]; then
-  printf "Saved csv: ${YELLOW}${csv}${NC}\n"
+if [ ! -z "$map" ]; then
+    ./plot_tagDensity.R -i tag_latlon.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
+    printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
 
-if [ ! -z "$map" ]; then
-  echo -e "$csvoutput" | ./plot_tagDensity.R --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
-  printf "Saved map: ${YELLOW}${map}${NC}\n"
+if [ ! -z "$csv" ]; then
+    mv tag_latlon.tmp "$csv"
+    printf "Saved csv: ${YELLOW}${csv}${NC}\n"
+else
+    rm tag_latlon.tmp
 fi
+
 
 
 date=`date`
