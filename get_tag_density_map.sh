@@ -3,7 +3,7 @@
 #defaults
 server=${server:-"http://lz4.overpass-api.de"}
 tag=${tag:-"waterway=riverbank"}
-binwidth=${binwidth:-0.5}
+binwidth=${binwidth:-1}
 countries=${countries:-"no"}
 throttle=5
 bbox=
@@ -84,7 +84,7 @@ else
 fi
 
 
-echo -e "@lat,@lon\n" > tag_latlon.tmp
+echo -e "@lat,@lon\n" > /tmp/${csv%.*}.tmp
 
 
 
@@ -130,10 +130,10 @@ while [ "$#" -gt 0 ]; do
     fi
 
     # Parse xml to csv (we can't do out:csv because of missing error messages in csv queries)
-    out=$(echo "$out" | grep "center" | cut -f 2 -f 4 -d '"' | tr '"' ',')
+    out=$(echo "$out" | grep "center" | cut -f 2,4 -d '"' | tr '"' ',')
 
     if [ ! $(echo -n "$out" | wc -l) -eq 0 ]; then
-        echo -e "${out}\n" >> tag_latlon.tmp
+        echo -e "${out}\n" >> /tmp/${csv%.*}.tmp
     fi
 
     echo -n "$out" | wc -l
@@ -145,15 +145,13 @@ done
 printf 'Query time: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
 if [ ! -z "$map" ]; then
-    ./plot_tagDensity.R -i tag_latlon.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
+    ./plot_tagDensity.R -i /tmp/${csv%.*}.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
     printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
 
 if [ ! -z "$csv" ]; then
-    mv tag_latlon.tmp "$csv"
+    mv /tmp/${csv%.*}.tmp "$csv"
     printf "Saved csv: ${YELLOW}${csv}${NC}\n"
-else
-    rm tag_latlon.tmp
 fi
 
 
