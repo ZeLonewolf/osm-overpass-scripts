@@ -80,6 +80,7 @@ if [ -z "$bbox" ]; then
     printf "Processing whole planet in ${YELLOW}${#q_bbox[@]} bbox${NC} areas\n"
 else
     q_bbox="[bbox:${bbox}]"
+    split=0
     printf "Processing ${YELLOW}${q_bbox} bbox${NC} area\n"
 fi
 
@@ -130,7 +131,7 @@ while [ "$#" -gt 0 ]; do
     fi
 
     # Parse xml to csv (we can't do out:csv because of missing error messages in csv queries)
-    out=$(echo "$out" | grep "center" | cut -f 2,4 -d '"' | tr '"' ',')
+    out=$(echo "$out" | grep "lat"| cut -f 2 -d "a" | cut -f 2,4 -d '"' | tr '"' ',')
 
     if [ ! $(echo -n "$out" | wc -l) -eq 0 ]; then
         echo -e "${out}\n" >> /tmp/${csv%.*}.tmp
