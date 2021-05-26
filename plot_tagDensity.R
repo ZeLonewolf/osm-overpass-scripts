@@ -108,6 +108,7 @@ args = commandArgs(trailingOnly = TRUE)
 
         
 # Save output figure
-    save_plot(opt$output, plot)
+    #save_plot(opt$output, plot)
+    ggsave(opt$output, plot, height = 3.71, width = 6)
     
     
