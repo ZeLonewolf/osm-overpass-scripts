@@ -9,6 +9,9 @@ throttle=5
 bbox=
 rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
+echo $0
+echo ${0%/*}
+
 #color output codes
 YELLOW='\033[1;33m'
 NC='\033[0m'
@@ -108,7 +111,7 @@ while [ "$#" -gt 0 ]; do
     if [ "$full" = "yes" ]; then printf "Slot found "; fi
 
     # Run query
-    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" queries/find_centers.op`
+    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.op`
     out="$(wget -qO- --read-timeout=9000 --post-data="$query" "$server/api/interpreter")"
     
     # Check if query failed
