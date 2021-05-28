@@ -1,7 +1,7 @@
 # osm-overpass-scripts
 Shell scripts for manipulating OpenStreetMap overpass queries
 
-Currently, these scripts only handle tag comparison.  However, the intent is to build up a library of generic scripts that can be used for tag comparisons and statistics generation.
+The intent of this repository is to build up a library of generic scripts that can be used for tag comparisons and statistics generation using overpass.
 
 ## compare_tags_by_country.sh
 | green-red | viridis | plasma | blue-red |
