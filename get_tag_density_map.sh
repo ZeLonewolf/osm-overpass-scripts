@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #defaults
-server=${server:-"http://lz4.overpass-api.de"}
+#server=${server:-"http://lz4.overpass-api.de"}
+server=${server:-"https://overpass.kumi.systems"}
 tag=${tag:-"waterway=riverbank"}
 binwidth=${binwidth:-1}
 countries=${countries:-"no"}
@@ -112,7 +113,7 @@ while [ "$#" -gt 0 ]; do
 
     # Run query
     query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.op`
-    out="$(wget -qO- --read-timeout=9000 --post-data="$query" "$server/api/interpreter")"
+    out="$(curl -s -m 9000 -d "$query" -X POST "$server/api/interpreter")"
     
     # Check if query failed
     if [ $(echo "$out" | grep -c "remark") -eq 1 ] || [ $(echo "$out" | wc -l) -eq 1 ]; then
