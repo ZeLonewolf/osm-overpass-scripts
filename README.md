@@ -49,6 +49,8 @@ Usage:
 Install the following pre-requisites:
 * libudunits2-dev
 * libfontconfig1-dev
+* libicu66
+* libcairo2-dev
 * R script (see installation instructions for: [Ubuntu 20.04](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04 "Ubuntu 20.04 R installation instructions"), [Ubuntu 21.04](https://cran.r-project.org/bin/linux/ubuntu/)
 
 Run:
