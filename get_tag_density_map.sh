@@ -10,8 +10,6 @@ throttle=5
 bbox=
 rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
-echo $0
-echo ${0%/*}
 
 #color output codes
 YELLOW='\033[1;33m'
@@ -112,11 +110,11 @@ while [ "$#" -gt 0 ]; do
     if [ "$full" = "yes" ]; then printf "Slot found "; fi
 
     # Run query
-    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.op`
+    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers2.op`
     out="$(curl -s -m 9000 -d "$query" -X POST "$server/api/interpreter")"
     
     # Check if query failed
-    if [ $(echo "$out" | grep -c "remark") -eq 1 ] || [ $(echo "$out" | wc -l) -eq 1 ]; then
+    if [ ! $(echo -n "$out" | grep "^,,[0-9]" | wc -l ) -eq 1 ]; then
         # if query failed split square into 4 smaller squares and add to the queue
         printf "${YELLOW}Query failed.${NC} Splitting into smaller areas...\n"
         b_num=$(echo "$b" | cut -f 2 -d ':' | tr -d ']')
@@ -134,16 +132,19 @@ while [ "$#" -gt 0 ]; do
         continue
     fi
 
-    # Parse xml to csv (we can't do out:csv because of missing error messages in csv queries)
-    out=$(echo "$out" | grep "lon" | cut -f 2 -d "a" | cut -f 2,4 -d '"' | tr '"' ',')
+    # Parse output
+    out=$(echo "$out" | sed '$d' | cut -f 1,2 -d ',')
 
-    if [ ! $(echo -n "$out" | wc -l) -eq 0 ]; then
+    ocount=$(echo -n "$out" | wc -l)
+    echo "$ocount"
+
+    if [ ! "$ocount" -eq 0 ]; then
         echo "$out" >> /tmp/tag_csv.tmp
     fi
 
-    echo -n "$out" | wc -l
-    sleep "$throttle"
+
     shift
+    sleep "$throttle"
 done
 
 
