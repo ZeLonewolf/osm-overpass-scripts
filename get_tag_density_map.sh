@@ -48,6 +48,9 @@ if [ -z "$bbox" ]; then
                 | tr -d '{}[]"' \
                 | cut -f 5 -d "," \
                 | cut -f 2 -d ":")
+
+    tcount=${tcount:-0}
+
     printf "There are ${YELLOW}${tcount}${NC} objects in total\n"
 
 
