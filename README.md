@@ -24,7 +24,7 @@ Requires:
     --map               - file name for map plot. Supported formats: .png, .jpg, .pdf
     --color             - color scheme for plot. [green-red: GR, blue-red: BR, viridis: V, plasma: P] (default: GR)
     --throttle <int>    - number of seconds to pause between overpass requests.  If you are running this against a private
-                          overpass instance, this can safely be set to zero to speed up processing. (default: 5)
+                          overpass instance, this can safely be set to zero to speed up processing. (default: 1)
 
 ## get_tag_density_map.sh
 | no borders | w/ borders |
@@ -43,6 +43,7 @@ Usage:
      --binwidth          - size of square for object counting in degrees. 1 means 1˚x1˚ square (default: 1)
      --bbox              - boundig box for area of analysis. minlat,minlon,maxlat,maxlon (default: whole world)
      --countries         - draw countries' borders [yes|no] (default: no)
+     --throttle <int>    - number of seconds to pause between overpass requests. (default: 1)
 
 ## Installation
 
