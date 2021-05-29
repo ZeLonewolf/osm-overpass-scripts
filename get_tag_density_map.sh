@@ -113,7 +113,7 @@ while [ "$#" -gt 0 ]; do
     if [ "$full" = "yes" ]; then printf "Slot found "; fi
 
     # Run query
-    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers2.op`
+    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.op`
     out="$(curl -s -m 9000 -d "$query" -X POST "$server/api/interpreter")"
     
     # Check if query failed
