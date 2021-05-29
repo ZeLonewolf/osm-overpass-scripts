@@ -36,7 +36,7 @@ args = commandArgs(trailingOnly = TRUE)
                                         help = 'Outputfile for plot (.png, ,jpg, .pdf)',
                                         metavar = 'character'),
                         make_option(c("-t", "--tag", type="character"),
-                                        default = NULL, help = 'tag name',
+                                        default = "tag density", help = 'tag name',
                                         metavar = 'character'),
                         make_option(c("-w", "--binwidth", type="double"),
                                         default = 1, help = 'size of square for object counting in degrees',
@@ -97,7 +97,7 @@ args = commandArgs(trailingOnly = TRUE)
                           legend.title = element_markdown())
                                 
     if (anyNA(bbox)) {
-        print("No bbox set. Plotting for whole world. (If bbox was set check the format lat,lon,lat,lon")
+        print("No bbox set. Plotting for whole world. (If bbox was set check the format lat,lon,lat,lon)")
         plot <- plot +
                     coord_sf(expand = FALSE, ylim = c(-55, 90)) +
                     scale_y_continuous(breaks = c(-50, 0 , 50))

@@ -54,12 +54,12 @@ if [ -z "$bbox" ]; then
 
 
     # based on tag count, decide how small planet fragments to make
-    if [ "$tcount" -le 300000 ]; then       # 0.3 mil
+    if [ "$tcount" -le 500000 ]; then        # 0.5 mil
         split=360   # whole planet
-    elif [ "$tcount" -le 1000000 ]; then    # 1 mil
-        split=45    #15
-    elif [ "$tcount" -le 10000000 ]; then   # 10 mil
-        split=30    #10
+    elif [ "$tcount" -le 10000000 ]; then    # 10 mil
+        split=45    #32
+    elif [ "$tcount" -le 100000000 ]; then   # 100 mil
+        split=30    #72
     else
         split=5
     fi
@@ -89,7 +89,7 @@ else
 fi
 
 
-echo -e "@lat,@lon\n" > /tmp/${csv%.*}.tmp
+echo "@lat,@lon" > /tmp/tag_csv.tmp
 
 
 
@@ -135,10 +135,10 @@ while [ "$#" -gt 0 ]; do
     fi
 
     # Parse xml to csv (we can't do out:csv because of missing error messages in csv queries)
-    out=$(echo "$out" | grep "lon"| cut -f 2 -d "a" | cut -f 2,4 -d '"' | tr '"' ',')
+    out=$(echo "$out" | grep "lon" | cut -f 2 -d "a" | cut -f 2,4 -d '"' | tr '"' ',')
 
     if [ ! $(echo -n "$out" | wc -l) -eq 0 ]; then
-        echo -e "${out}\n" >> /tmp/${csv%.*}.tmp
+        echo "$out" >> /tmp/tag_csv.tmp
     fi
 
     echo -n "$out" | wc -l
@@ -150,12 +150,12 @@ done
 printf 'Query time: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
 if [ ! -z "$map" ]; then
-    ./plot_tagDensity.R -i /tmp/${csv%.*}.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
+    ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
     printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
 
 if [ ! -z "$csv" ]; then
-    mv /tmp/${csv%.*}.tmp "$csv"
+    mv /tmp/tag_csv.tmp "$csv"
     printf "Saved csv: ${YELLOW}${csv}${NC}\n"
 fi
 
