@@ -18,7 +18,7 @@ tag=${tag:-"waterway=riverbank"}
 binwidth=${binwidth:-1}
 countries=${countries:-"no"}
 throttle=${throttle:-1}
-bbox=
+bbox=${bbox:-}
 rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
 
