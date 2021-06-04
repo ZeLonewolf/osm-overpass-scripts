@@ -43,7 +43,10 @@ Usage:
      --binwidth          - size of square for object counting in degrees. 1 means 1˚x1˚ square (default: 1)
      --bbox              - boundig box for area of analysis. minlat,minlon,maxlat,maxlon (default: whole world)
      --countries         - draw countries' borders [yes|no] (default: no)
+     --location          - bbox area preset. [Europe, USA, Asia, Africa, NAmerica, SAmerica] (default: whole world)
      --throttle <int>    - number of seconds to pause between overpass requests. (default: 1)
+
+Note: Some tag names need to be quoted e.g. `--tag \"name:etymology:wikidata\"`
 
 ## Installation
 

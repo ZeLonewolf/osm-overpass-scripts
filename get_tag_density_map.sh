@@ -19,8 +19,19 @@ binwidth=${binwidth:-1}
 countries=${countries:-"no"}
 throttle=${throttle:-1}
 bbox=${bbox:-}
+location=${location:-}
 rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
+
+# Set bbox according to the location preset
+case $location in
+    Europe) bbox="34,-13,65,48" ;;
+    USA) bbox="24,-126,51,-65" ;;
+    Africa) bbox="-36,-21,39,55" ;;
+    Asia) bbox="-11,25,77,191" ;;
+    NAmerica) bbox="9,-168,73,-51" ;;
+    SAmerica) bbox="56,-90,17,-31" ;;
+esac
 
 #color output codes
 YELLOW='\033[1;33m'
