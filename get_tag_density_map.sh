@@ -1,20 +1,5 @@
 #!/bin/bash
 
-#defaults
-#server=${server:-"http://lz4.overpass-api.de"}
-server=${server:-"https://overpass.kumi.systems"}
-tag=${tag:-"waterway=riverbank"}
-binwidth=${binwidth:-1}
-countries=${countries:-"no"}
-throttle=5
-bbox=
-rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
-
-
-#color output codes
-YELLOW='\033[1;33m'
-NC='\033[0m'
-
 #command-line arguments
 while [ $# -gt 0 ]; do
 
@@ -25,6 +10,34 @@ while [ $# -gt 0 ]; do
 
   shift
 done
+
+#defaults
+#server=${server:-"http://lz4.overpass-api.de"}
+server=${server:-"https://overpass.kumi.systems"}
+tag=${tag:-"waterway=riverbank"}
+binwidth=${binwidth:-1}
+countries=${countries:-"no"}
+throttle=${throttle:-1}
+bbox=${bbox:-}
+location=${location:-}
+rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
+
+
+# Set bbox according to the location preset
+case $location in
+    Europe) bbox="34,-13,65,48" ;;
+    USA) bbox="24,-126,51,-65" ;;
+    Africa) bbox="-36,-21,39,55" ;;
+    Asia) bbox="-11,25,77,191" ;;
+    NAmerica) bbox="9,-168,73,-51" ;;
+    SAmerica) bbox="56,-90,17,-31" ;;
+esac
+
+#color output codes
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+
 
 date=`date`
 
@@ -58,13 +71,14 @@ if [ -z "$bbox" ]; then
     if [ "$tcount" -le 500000 ]; then        # 0.5 mil
         split=360   # whole planet
     elif [ "$tcount" -le 10000000 ]; then    # 10 mil
-        split=45    #32
+        split=60    # 18
     elif [ "$tcount" -le 100000000 ]; then   # 100 mil
-        split=30    #72
+        split=30    # 72
     else
         split=5
     fi
                     #split=90    # 8 framents
+                    #split=60    # 18 fragments
                     #split=45    # 32 fragments
                     #split=30    # 72 fragments
                     #split=20    # 162 fragments
@@ -101,6 +115,7 @@ while [ "$#" -gt 0 ]; do
     
     printf "${YELLOW}${b}${NC} "
 
+
     # Check with server if query slot is available now
     full=
     while [ $(curl -s "${server}/api/status" | grep -c "now") -eq 0 ] && [ "$rate" -gt 0 ]; do
@@ -112,9 +127,11 @@ while [ "$#" -gt 0 ]; do
     done
     if [ "$full" = "yes" ]; then printf "Slot found "; fi
 
+
     # Run query
     query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.op`
     out="$(curl -s -m 9000 -d "$query" -X POST "$server/api/interpreter")"
+
     
     # Check if query failed
     if [ ! $(echo -n "$out" | grep "^,,[0-9]" | wc -l ) -eq 1 ]; then
@@ -134,6 +151,7 @@ while [ "$#" -gt 0 ]; do
         set ${new_bbox[@]} "$@"
         continue
     fi
+
 
     # Parse output
     out=$(echo "$out" | sed '$d' | cut -f 1,2 -d ',')

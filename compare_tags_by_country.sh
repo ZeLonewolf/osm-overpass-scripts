@@ -1,17 +1,5 @@
 #!/bin/bash
 
-#defaults
-server=${server:-"http://lz4.overpass-api.de"}
-tag1=${tag1:-"waterway=riverbank"}
-tag2=${tag2:-"water=river"}
-color=${color:-"GR"}
-tmpcsv="/tmp/all_country_ids.csv"
-throttle=5
-
-#color output codes
-YELLOW='\033[1;33m'
-NC='\033[0m'
-
 #command-line arguments
 while [ $# -gt 0 ]; do
 
@@ -22,6 +10,20 @@ while [ $# -gt 0 ]; do
 
   shift
 done
+
+#defaults
+server=${server:-"http://lz4.overpass-api.de"}
+tag1=${tag1:-"waterway=riverbank"}
+tag2=${tag2:-"water=river"}
+color=${color:-"GR"}
+tmpcsv="/tmp/all_country_ids.csv"
+throttle=${throttle:-1}
+
+#color output codes
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+
 
 date=`date`
 
