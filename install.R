@@ -2,7 +2,8 @@
 
 # Load packages
     packages = c("tidyverse", "ggspatial", "sf", "rnaturalearth", 
-                 "rnaturalearthdata", "rgeos", "cowplot", "optparse", "ggtext")
+                 "rnaturalearthdata", "rgeos", "cowplot", "optparse", "ggtext",
+                 "lubridate", "scales")
 
     pack_check <- lapply(packages,
                            FUN = function(x) {
