@@ -37,7 +37,7 @@ Usage:
 
 ### Parameters
      --server            - url to overpass server (default: http://lz4.overpass-api.de)
-     --tag               - tag for object density analysis - nodes and ways only (default: waterway=riverbank)
+     --tag               - tag for object density analysis (default: waterway=riverbank)
      --csv               - output file for counts in csv format
      --map               - file name for map plot. Supported formats: .png, .jpg, .pdf
      --binwidth          - size of square for object counting in degrees. 1 means 1˚x1˚ square (default: 1)
@@ -48,11 +48,31 @@ Usage:
 
 Note: Some tag names need to be quoted e.g. `--tag \"name:etymology:wikidata\"`
 
+## view_tag_history.sh
+| single tag | two tags comparison |
+| ----| ---- |
+| <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/testhist1.png" width="350"> | <img src="https://github.com/ZeLonewolf/osm-overpass-scripts/blob/main/img/testhist2.png" width="350"> |
+
+Usage:
+
+    ./get_tag_density_map.sh --tag1 "water=river" [--tag2 "waterway=riverbank"] --plot <output file>.png --binwidth year [--csv yes]
+
+### Parameters
+     --tag1              - tag for object history analysis (default: waterway=riverbank)
+     --tag1              - second tag for object history analysis (optional)
+     --csv               - save tag history data as .csv files (default: off)
+     --plot              - file name for plot. Supported formats: .png, .jpg, .pdf
+     --binwidth          - timeinterval used for binning (year | quarter | month | week, default: day)
+
+Note: Uses data from taginfo API
+
 ## Installation
 
 Install the following pre-requisites:
 * libudunits2-dev
 * libfontconfig1-dev
+* libicu66
+* libcairo2-dev
 * R script (see installation instructions for: [Ubuntu 20.04](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04 "Ubuntu 20.04 R installation instructions"), [Ubuntu 21.04](https://cran.r-project.org/bin/linux/ubuntu/)
 
 Run:
