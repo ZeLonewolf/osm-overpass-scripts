@@ -28,9 +28,10 @@ case $location in
     Europe) bbox="34,-13,65,48" ;;
     USA) bbox="24,-126,51,-65" ;;
     Africa) bbox="-36,-21,39,55" ;;
-    Asia) bbox="-11,25,77,191" ;;
+    Asia) bbox="-11,25,77,180" ;;
     NAmerica) bbox="9,-168,73,-51" ;;
-    SAmerica) bbox="56,-90,17,-31" ;;
+    SAmerica) bbox="-56,-90,17,-31" ;;
+    Australia) bbox="-47,106,8,180" ;;
 esac
 
 #color output codes
@@ -172,7 +173,7 @@ done
 printf 'Query time: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
 if [ ! -z "$map" ]; then
-    ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox "$bbox" --countries "$countries"
+    ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries"
     printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
 
