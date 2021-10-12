@@ -20,6 +20,7 @@ countries=${countries:-"no"}
 throttle=${throttle:-1}
 bbox=${bbox:-}
 location=${location:-}
+plotbackend=${plotbackend:-"R"}
 rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
 
@@ -173,7 +174,11 @@ done
 printf 'Query time: %02dh:%02dm:%02ds\n' $(($SECONDS/3600)) $(($SECONDS%3600/60)) $(($SECONDS%60))
 
 if [ ! -z "$map" ]; then
-    ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries"
+    if [ "$plotbackend" = "py" ]; then
+        ${0%/*}/plot_tagDensity.py -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries"
+    else
+        ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries"
+    fi
     printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
 

@@ -44,9 +44,11 @@ Usage:
      --bbox              - boundig box for area of analysis. minlat,minlon,maxlat,maxlon (default: whole world)
      --countries         - draw countries' borders [yes|no] (default: no)
      --location          - bbox area preset. [Europe, USA, Asia, Africa, NAmerica, SAmerica] (default: whole world)
+     --plotbackend       - choose backed for plotting between R and python [R, py] (default: R)
      --throttle <int>    - number of seconds to pause between overpass requests. (default: 1)
 
 Note: Some tag names need to be quoted e.g. `--tag \"name:etymology:wikidata\"`
+Requires: R of python for plotting
 
 ## view_tag_history.sh
 | single tag | two tags comparison |
@@ -78,3 +80,11 @@ Install the following pre-requisites:
 Run:
 
 	sudo ./install.R
+
+
+For python:
+
+     pip install numpy
+     pip install matplotlib
+     pip install geopandas
+
