@@ -1,0 +1,216 @@
+9407,AD,Andorra
+14296,SK,Slovakia
+16239,AT,Austria
+21335,HU,Hungary
+28699,GE,Georgia
+36989,VA,Vatican City
+49715,PL,Poland
+49898,KH,Cambodia
+49903,LA,Laos
+49915,VN,Vietnam
+50046,DK,Denmark
+50371,MM,Myanmar
+51477,DE,Germany
+51684,CZ,Czechia
+51701,CH,Switzerland
+52411,BE,Belgium
+52822,SE,Sweden
+52939,FO,Faroe Islands
+53292,AL,Albania
+53293,MK,North Macedonia
+53296,ME,Montenegro
+54224,FI,Finland
+54624,SM,San Marino
+58974,MD,Moldova
+59065,BY,Belarus
+59470,BR,Brazil
+60189,RU,Russia
+60199,UA,Ukraine
+62149,GB,United Kingdom
+62269,IM,Isle of Man
+62273,IE,Ireland
+72594,LV,Latvia
+72596,LT,Lithuania
+79510,EE,Estonia
+80500,AU,Australia
+87565,ZA,South Africa
+88210,SZ,Eswatini
+90689,RO,Romania
+108089,EC,Ecuador
+114686,MX,Mexico
+120027,CO,Colombia
+148838,US,United States
+161033,MN,Mongolia
+167454,CL,Chile
+171496,RW,Rwanda
+174737,TR,Turkey
+178009,KG,Kyrgyzstan
+184629,BT,Bhutan
+184633,NP,Nepal
+184640,BD,Bangladesh
+184818,JO,Jordan
+184840,SY,Syria
+184843,LB,Lebanon
+186382,BG,Bulgaria
+192307,GR,Greece
+192734,KP,North Korea
+192756,DZ,Algeria
+192757,TN,Tunisia
+192758,LY,Libya
+192763,MR,Mauritania
+192774,GM,The Gambia
+192775,SN,Senegal
+192776,GW,Guinea-Bissau
+192777,SL,Sierra Leone
+192778,GN,Guinea
+192779,CI,Côte d'Ivoire
+192780,LR,Liberia
+192781,GH,Ghana
+192782,TG,Togo
+192783,BF,Burkina Faso
+192784,BJ,Benin
+192785,ML,Mali
+192786,NE,Niger
+192787,NG,Nigeria
+192789,SD,Sudan
+192790,CF,Central African Republic
+192791,GQ,Equatorial Guinea
+192793,GA,Gabon
+192794,CG,Congo-Brazzaville
+192795,CD,Democratic Republic of the Congo
+192796,UG,Uganda
+192798,KE,Kenya
+192799,SO,Somalia
+192800,ET,Ethiopia
+192801,DJ,Djibouti
+192830,CM,Cameroon
+195266,NA,Namibia
+195267,AO,Angola
+195269,BI,Burundi
+195270,TZ,Tanzania
+195271,ZM,Zambia
+195272,ZW,Zimbabwe
+195273,MZ,Mozambique
+195290,MW,Malawi
+196240,UZ,Uzbekistan
+214626,TJ,Tajikistan
+214665,KZ,Kazakhstan
+214885,HR,Croatia
+218657,SI,Slovenia
+223026,TM,Turkmenistan
+252645,BO,Bolivia
+270009,GG,Guernsey
+270056,CN,China
+272644,VE,Venezuela
+285454,VG,British Virgin Islands
+286393,AR,Argentina
+287072,UY,Uruguay
+287077,PY,Paraguay
+287082,SR,Suriname
+287083,GY,Guyana
+287666,NI,Nicaragua
+287667,CR,Costa Rica
+287668,PA,Panama
+287670,HN,Honduras
+287827,BZ,Belize
+288247,PE,Peru
+295480,PT,Portugal
+296961,ER,Eritrea
+299133,IS,Iceland
+303427,AF,Afghanistan
+304716,IN,India
+304751,ID,Indonesia
+304934,IQ,Iraq
+304938,IR,Iran
+305092,YE,Yemen
+305095,QA,Qatar
+305099,KW,Kuwait
+305138,OM,Oman
+305142,TL,East Timor
+307573,PK,Pakistan
+307584,SA,Saudi Arabia
+307756,KR,South Korea
+307763,AE,United Arab Emirates
+307787,CY,Cyprus
+307823,DM,Dominica
+307828,DO,Dominican Republic
+307829,HT,Haiti
+307833,CU,Cuba
+307866,PG,Papua New Guinea
+364066,AM,Armenia
+364110,AZ,Azerbaijan
+365307,MT,Malta
+365331,IT,Italy
+367988,JE,Jersey
+378734,BH,Bahrain
+382313,JP,Japan
+443174,PH,Philippines
+447325,MG,Madagascar
+449220,TW,Taiwan
+535774,CV,Cape Verde
+535790,KM,Comoros
+535828,MU,Mauritius
+535880,ST,São Tomé and Príncipe
+536765,SC,Seychelles
+536773,MV,Maldives
+536780,SG,Singapore
+536807,LK,Sri Lanka
+536899,KN,Saint Kitts and Nevis
+536900,AG,Antigua and Barbuda
+537257,MS,Montserrat
+547469,BS,The Bahamas
+547479,TC,Turks and Caicos Islands
+547511,BB,Barbados
+550725,VC,Saint Vincent and the Grenadines
+550727,GD,Grenada
+550728,LC,Saint Lucia
+555017,JM,Jamaica
+555717,TT,Trinidad and Tobago
+556706,NZ,New Zealand
+571178,KI,Kiribati
+571747,FJ,Fiji
+571771,MH,Marshall Islands
+571802,FM,Federated States of Micronesia
+571804,NR,Nauru
+571805,PW,Palau
+1124039,MC,Monaco
+1155955,LI,Liechtenstein
+1278736,GI,Gibraltar
+1311341,ES,Spain
+1428125,CA,Canada
+1473946,IL,Israel
+1473947,EG,Egypt
+1520612,SV,El Salvador
+1521463,GT,Guatemala
+1558556,NU,Niue
+1656678,SS,South Sudan
+1741311,RS,Serbia
+1857436,SB,Solomon Islands
+1872673,WS,Samoa
+1889339,BW,Botswana
+1964272,SH,"Saint Helena, Ascension and Tristan da Cunha"
+1983628,GS,South Georgia and the South Sandwich Islands
+1993208,BM,Bermuda
+1993867,IO,British Indian Ocean Territory
+2067731,TH,Thailand
+2088990,XK,Kosovo
+2093234,LS,Lesotho
+2103120,BN,Brunei
+2108121,MY,Malaysia
+2171347,LU,Luxembourg
+2177161,AI,Anguilla
+2177246,VU,Vanuatu
+2177266,TV,Tuvalu
+2184073,GL,Greenland
+2184233,CK,Cook Islands
+2185366,KY,Cayman Islands
+2185374,FK,Falkland Islands
+2185375,PN,Pitcairn Islands
+2186600,TK,Tokelau
+2186665,TO,Tonga
+2202162,FR,France
+2323309,NL,Netherlands
+2361304,TD,Chad
+2528142,BA,Bosnia and Herzegovina
+2978650,NO,Norway
+3630439,MA,Morocco

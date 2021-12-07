@@ -35,9 +35,6 @@ echo "Start processing at $date"
 echo
 
 
-wget -qO "$tmpcsv" --post-file=queries/all_country_ids.op \
-  "$server/api/interpreter"
-
 ./taginfo_compare_tags.py --level 2 --csv $tag_count_csv
 
 wgetreturn=$?

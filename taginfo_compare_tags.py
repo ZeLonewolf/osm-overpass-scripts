@@ -7,6 +7,7 @@ import datetime
 import argparse
 import json
 import time
+import csv
 
 parser = argparse.ArgumentParser(description='Script for getting per-country tag counts via taginfo. Quicker alternative to compare_tags_by_country.sh')
 """
@@ -46,14 +47,25 @@ def recursive_regions(regions, max_lvl=args.level):
         output+=recursive_regions(region, max_lvl)
     return output
 
+# Process regions.json file. Recursively iterates over the tree and
+# returns list of taginfo servers to scan, in format (name, server_url)
 list_of_taginfo_servers = recursive_regions(regions, args.level)
+
+dict_of_country_codes = dict()
+f= csv.reader(open('sample list of countries.txt'))
+for row in f:
+    # Data sample: 53296,ME,Montenegro
+    # print(row)
+    rel_id, iso, name = row
+    dict_of_country_codes[name]=iso
+
 
 print("processing $csvlines countries")
 print(f"@[iso,name]: {args.tag1}, {args.tag2}")
 print("------------------------------")
 
-
-output = [f"iso,name,{args.tag1},{args.tag2}"]
+# iso_a2 must be present because it's used for R mapping.
+output = [f"iso_a2,name,{args.tag1},{args.tag2}"]
 for region, server in list_of_taginfo_servers:
     if '=' in args.tag1: 
         url1 = server+'/api/4/tag/stats'
@@ -78,9 +90,17 @@ for region, server in list_of_taginfo_servers:
         else:req_ok=True
     count1=list(filter(lambda x: x['type']=='all', resp1.json()['data']))[0]['count']
     count2=list(filter(lambda x: x['type']=='all', resp2.json()['data']))[0]['count']
-    print(f"[{region}]: {count1}, {count2}")
-    output.append(f"FIXME,{region}, {count1}, {count2}")
-    time.sleep(0.15)
+    iso = ''
+    if region in dict_of_country_codes:
+        iso=dict_of_country_codes[region]
+    print(f"[{iso} {region}]: {count1}, {count2}")
+    if not iso:
+        iso='FIXME'
+        # Possible alternative to fix those fixmes: run overpass query for only those regions
+    else:  # FIXME: Temp workaround to missing iso codes
+        output.append(f"{iso},{region}, {count1}, {count2}")
+    # There's nothing more permanent, than temporary solution.
+    time.sleep(0.05)
 with open("/tmp/tags_all_countries.csv", 'w') as tmpcsv:
     print('\n'.join(output), file=tmpcsv)
 if args.csv:
