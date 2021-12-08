@@ -418,6 +418,13 @@
           "iso": "AF"
         },
         {
+          "name": "East Timor",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/asia/east-timor",
+          "subregions": [],
+          "iso": "TL"
+        },
+        {
           "name": "Armenia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/armenia",
@@ -469,14 +476,101 @@
           "name": "India",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/india",
-          "subregions": [],
+          "subregions": [
+            {
+              "name": "Central Zone",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/india/central-zone",
+              "subregions": []
+            },
+            {
+              "name": "Eastern Zone",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/india/eastern-zone",
+              "subregions": []
+            },
+            {
+              "name": "North-Eastern Zone",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/india/north-eastern-zone",
+              "subregions": []
+            },
+            {
+              "name": "Northern Zone",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/india/northern-zone",
+              "subregions": []
+            },
+            {
+              "name": "Southern Zone",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/india/southern-zone",
+              "subregions": []
+            },
+            {
+              "name": "Western Zone",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/india/western-zone",
+              "subregions": []
+            }
+          ],
           "iso": "IN"
         },
         {
           "name": "Indonesia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia",
-          "subregions": [],
+          "subregions": [
+            {
+              "name": "Java",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/java",
+              "subregions": [],
+              "iso": "ID-JW"
+            },
+            {
+              "name": "Kalimantan",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/kalimantan",
+              "subregions": [],
+              "iso": "ID-KA"
+            },
+            {
+              "name": "Maluku",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/maluku",
+              "subregions": [],
+              "iso": "ID-ML"
+            },
+            {
+              "name": "Nusa-Tenggara",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/nusa-tenggara",
+              "subregions": [],
+              "iso": "ID-NU"
+            },
+            {
+              "name": "Papua",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/papua",
+              "subregions": [],
+              "iso": "ID-PP"
+            },
+            {
+              "name": "Sulawesi",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/sulawesi",
+              "subregions": [],
+              "iso": "ID-SL"
+            },
+            {
+              "name": "Sumatra",
+              "admin_level": 3,
+              "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia/sumatra",
+              "subregions": [],
+              "iso": "ID-SM"
+            }
+          ],
           "iso": "ID"
         },
         {
@@ -750,6 +844,90 @@
           "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/new-zealand",
           "subregions": [],
           "iso": "NZ"
+        },
+        {
+          "name": "Cook Islands",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/cook-islands",
+          "subregions": [],
+          "iso": "CK"
+        },
+        {
+          "name": "Kiribati",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/kiribati",
+          "subregions": [],
+          "iso": "KI"
+        },
+        {
+          "name": "Marshall Islands",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/marshall-islands",
+          "subregions": [],
+          "iso": "MH"
+        },
+        {
+          "name": "Micronesia",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/micronesia",
+          "subregions": [],
+          "iso": "FM"
+        },
+        {
+          "name": "Nauru",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/nauru",
+          "subregions": [],
+          "iso": "NR"
+        },
+        {
+          "name": "Niue",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/niue",
+          "subregions": [],
+          "iso": "NU"
+        },
+        {
+          "name": "Palau",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/palau",
+          "subregions": [],
+          "iso": "PW"
+        },
+        {
+          "name": "Samoa",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/samoa",
+          "subregions": [],
+          "iso": "WS"
+        },
+        {
+          "name": "Solomon Islands",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/solomon-islands",
+          "subregions": [],
+          "iso": "SB"
+        },
+        {
+          "name": "Tonga",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/tonga",
+          "subregions": [],
+          "iso": "TO"
+        },
+        {
+          "name": "Tuvalu",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/tuvalu",
+          "subregions": [],
+          "iso": "TV"
+        },
+        {
+          "name": "Vanuatu",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/vanuatu",
+          "subregions": [],
+          "iso": "VU"
         },
         {
           "name": "Papua New Guinea",
@@ -1156,14 +1334,82 @@
               "name": "Baden-Württemberg",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/baden-wuerttemberg",
-              "subregions": [],
+              "subregions": [
+                {
+                  "name": "Regierungsbezirk Freiburg",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/baden-wuerttemberg/freiburg-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Karlsruhe",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/baden-wuerttemberg/karlsruhe-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Stuttgart",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/baden-wuerttemberg/stuttgart-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Tübingen",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/baden-wuerttemberg/tuebingen-regbez",
+                  "subregions": []
+                }
+              ],
               "iso": "DE-BW"
             },
             {
               "name": "Bayern",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern",
-              "subregions": [],
+              "subregions": [
+                {
+                  "name": "Mittelfranken",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/mittelfranken",
+                  "subregions": []
+                },
+                {
+                  "name": "Niederbayern",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/niederbayern",
+                  "subregions": []
+                },
+                {
+                  "name": "Oberbayern",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/oberbayern",
+                  "subregions": []
+                },
+                {
+                  "name": "Oberfranken",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/oberfranken",
+                  "subregions": []
+                },
+                {
+                  "name": "Oberpfalz",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/oberpfalz",
+                  "subregions": []
+                },
+                {
+                  "name": "Schwaben",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/schwaben",
+                  "subregions": []
+                },
+                {
+                  "name": "Unterfranken",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern/unterfranken",
+                  "subregions": []
+                }
+              ],
               "iso": "DE-BY"
             },
             {
@@ -1219,7 +1465,38 @@
               "name": "Nordrhein-Westfalen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen",
-              "subregions": [],
+              "subregions": [
+                {
+                  "name": "Regierungsbezirk Arnsberg",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen/arnsberg-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Detmold",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen/detmold-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Düsseldorf",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen/duesseldorf-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Köln",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez",
+                  "subregions": []
+                },
+                {
+                  "name": "Regierungsbezirk Münster",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen/muenster-regbez",
+                  "subregions": []
+                }
+              ],
               "iso": "DE-NW"
             },
             {
@@ -1276,7 +1553,328 @@
               "name": "England",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england",
-              "subregions": [],
+              "subregions": [
+                {
+                  "name": "Bedfordshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/bedfordshire",
+                  "subregions": []
+                },
+                {
+                  "name": "Berkshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/berkshire",
+                  "subregions": []
+                },
+                {
+                  "name": "Bristol",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/bristol",
+                  "subregions": [],
+                  "iso": "GB-BST"
+                },
+                {
+                  "name": "Buckinghamshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/buckinghamshire",
+                  "subregions": [],
+                  "iso": "GB-BKM"
+                },
+                {
+                  "name": "Cambridgeshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/cambridgeshire",
+                  "subregions": [],
+                  "iso": "GB-CAM"
+                },
+                {
+                  "name": "Cheshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/cheshire",
+                  "subregions": []
+                },
+                {
+                  "name": "Cornwall",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/cornwall",
+                  "subregions": [],
+                  "iso": "GB-CON"
+                },
+                {
+                  "name": "Cumbria",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/cumbria",
+                  "subregions": [],
+                  "iso": "GB-CMA"
+                },
+                {
+                  "name": "Derbyshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/derbyshire",
+                  "subregions": [],
+                  "iso": "GB-DBY"
+                },
+                {
+                  "name": "Devon",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/devon",
+                  "subregions": [],
+                  "iso": "GB-DEV"
+                },
+                {
+                  "name": "Dorset",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/dorset",
+                  "subregions": [],
+                  "iso": "GB-DOR"
+                },
+                {
+                  "name": "Durham",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/durham",
+                  "subregions": [],
+                  "iso": "GB-DUR"
+                },
+                {
+                  "name": "East Sussex",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/east-sussex",
+                  "subregions": [],
+                  "iso": "GB-ESX"
+                },
+                {
+                  "name": "East Yorkshire with Hull",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/east-yorkshire-with-hull",
+                  "subregions": [],
+                  "iso": "GB-ERY"
+                },
+                {
+                  "name": "Essex",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/essex",
+                  "subregions": [],
+                  "iso": "GB-ESS"
+                },
+                {
+                  "name": "Gloucestershire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/gloucestershire",
+                  "subregions": [],
+                  "iso": "GB-GLS"
+                },
+                {
+                  "name": "Greater London",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/greater-london",
+                  "subregions": []
+                },
+                {
+                  "name": "Greater Manchester",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/greater-manchester",
+                  "subregions": []
+                },
+                {
+                  "name": "Hampshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/hampshire",
+                  "subregions": [],
+                  "iso": "GB-HAM"
+                },
+                {
+                  "name": "Herefordshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/herefordshire",
+                  "subregions": [],
+                  "iso": "GB-HEF"
+                },
+                {
+                  "name": "Hertfordshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/hertfordshire",
+                  "subregions": [],
+                  "iso": "GB-HRT"
+                },
+                {
+                  "name": "Isle of Wight",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/isle-of-wight",
+                  "subregions": [],
+                  "iso": "GB-IOW"
+                },
+                {
+                  "name": "Kent",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/kent",
+                  "subregions": [],
+                  "iso": "GB-KEN"
+                },
+                {
+                  "name": "Lancashire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/lancashire",
+                  "subregions": [],
+                  "iso": "GB-LAN"
+                },
+                {
+                  "name": "Leicestershire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/leicestershire",
+                  "subregions": [],
+                  "iso": "GB-LEC"
+                },
+                {
+                  "name": "Lincolnshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/lincolnshire",
+                  "subregions": [],
+                  "iso": "GB-LIN"
+                },
+                {
+                  "name": "Merseyside",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/merseyside",
+                  "subregions": []
+                },
+                {
+                  "name": "Norfolk",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/norfolk",
+                  "subregions": [],
+                  "iso": "GB-NFK"
+                },
+                {
+                  "name": "Northamptonshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/northamptonshire",
+                  "subregions": [],
+                  "iso": "GB-NTH"
+                },
+                {
+                  "name": "Northumberland",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/northumberland",
+                  "subregions": [],
+                  "iso": "GB-NBL"
+                },
+                {
+                  "name": "North Yorkshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/north-yorkshire",
+                  "subregions": [],
+                  "iso": "GB-NYK"
+                },
+                {
+                  "name": "Nottinghamshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/nottinghamshire",
+                  "subregions": [],
+                  "iso": "GB-NTT"
+                },
+                {
+                  "name": "Oxfordshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/oxfordshire",
+                  "subregions": [],
+                  "iso": "GB-OXF"
+                },
+                {
+                  "name": "Rutland",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/rutland",
+                  "subregions": [],
+                  "iso": "GB-RUT"
+                },
+                {
+                  "name": "Shropshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/shropshire",
+                  "subregions": [],
+                  "iso": "GB-SHR"
+                },
+                {
+                  "name": "Somerset",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/somerset",
+                  "subregions": [],
+                  "iso": "GB-SOM"
+                },
+                {
+                  "name": "South Yorkshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/south-yorkshire",
+                  "subregions": []
+                },
+                {
+                  "name": "Staffordshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/staffordshire",
+                  "subregions": [],
+                  "iso": "GB-STS"
+                },
+                {
+                  "name": "Suffolk",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/suffolk",
+                  "subregions": [],
+                  "iso": "GB-SFK"
+                },
+                {
+                  "name": "Surrey",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/surrey",
+                  "subregions": [],
+                  "iso": "GB-SRY"
+                },
+                {
+                  "name": "Tyne and Wear",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/tyne-and-wear",
+                  "subregions": []
+                },
+                {
+                  "name": "Warwickshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/warwickshire",
+                  "subregions": [],
+                  "iso": "GB-WAR"
+                },
+                {
+                  "name": "West Midlands",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/west-midlands",
+                  "subregions": []
+                },
+                {
+                  "name": "West Sussex",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/west-sussex",
+                  "subregions": [],
+                  "iso": "GB-WSX"
+                },
+                {
+                  "name": "West Yorkshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/west-yorkshire",
+                  "subregions": [],
+                  "iso": ""
+                },
+                {
+                  "name": "Wiltshire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/wiltshire",
+                  "subregions": [],
+                  "iso": "GB-WIL"
+                },
+                {
+                  "name": "Worcestershire",
+                  "admin_level": 4,
+                  "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england/worcestershire",
+                  "subregions": [],
+                  "iso": "GB-WOR"
+                }
+              ],
               "iso": "GB-ENG"
             },
             {
@@ -2021,13 +2619,6 @@
                   "iso": "US-RI"
                 },
                 {
-                  "name": "United States Virgin Islands",
-                  "admin_level": 4,
-                  "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/us-virgin-islands",
-                  "subregions": [],
-                  "iso": "US-VI"
-                },
-                {
                   "name": "Vermont",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/vermont",
@@ -2192,7 +2783,20 @@
                   "name": "California",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/california",
-                  "subregions": [],
+                  "subregions": [
+                    {
+                      "name": "Northern California",
+                      "admin_level": 5,
+                      "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/california/norcal",
+                      "subregions": []
+                    },
+                    {
+                      "name": "Southern California",
+                      "admin_level": 5,
+                      "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/california/socal",
+                      "subregions": []
+                    }
+                  ],
                   "iso": "US-CA"
                 },
                 {
