@@ -26,16 +26,16 @@ parser.add_argument('-i', '--input', type=str,
                     help='Input CSV file lat, lon coordinates')
 parser.add_argument('-o', '--output', type=str,
                     help='Outputfile for plot (.png, ,jpg, .pdf)',
-                    default = "plot_" + str(datetime.datetime.now()) + ".png")
+                    default="plot_" + str(datetime.datetime.now()) + ".png")
 parser.add_argument('-t', '--tag', type=str,
                     help='tag name',
-                    default = "tag density")
+                    default="tag density")
 parser.add_argument('-w', '--binwidth', type=float,
                     help='size of square for object counting in degrees',
-                    default = 1)
+                    default=1)
 parser.add_argument('-b', '--bbox', type=str,
                     help='four coordinates separeatd by comma',
-                    default = "-55,-180,90,180")
+                    default="-55,-180,90,180")
 parser.add_argument('-c', '--countries', type=str, choices=['yes', 'no'],
                     help='whether to plot borders (default: no)',
                     default='no')
@@ -46,7 +46,6 @@ bbox = args.bbox.split(",")
 bbox = [float(x) for x in bbox]
 
 
-  
 if args.input == '-':
     overpass = np.genfromtxt(sys.stdin, delimiter=',', skip_header=1)
 else:
@@ -66,22 +65,22 @@ lon_bins = np.linspace(-180, 180, nx+1)
 lat_bins = np.linspace(-90, 90, ny+1)
 
 # Calculate frequency in each square bin
-density, _, _ = np.histogram2d(overpass[:,0], overpass[:,1], [lat_bins, lon_bins])
+density, _, _ = np.histogram2d(overpass[:, 0], overpass[:, 1], [lat_bins, lon_bins])
 
 # Turn the lon/lat bins into 2 dimensional arrays
 lon_bins_2d, lat_bins_2d = np.meshgrid(lon_bins, lat_bins)
 
 
 fig, ax = plt.subplots()
-#ax.set_aspect('equal')
+# ax.set_aspect('equal')
 ax.set_facecolor('black')
 ax.axis([bbox[1], bbox[3], bbox[0], bbox[2]])
 ax.set_title(args.tag, fontsize=15)
 
 plt.pcolormesh(lon_bins_2d, lat_bins_2d, np.log10(density), cmap='plasma', zorder=1)
-world.boundary.plot(ax=ax, edgecolor='grey', linewidth = 0.25, zorder=2)
+world.boundary.plot(ax=ax, edgecolor='grey', linewidth=0.25, zorder=2)
 
-plt.colorbar(label = r'$log_{10}$', fraction = 0.04, aspect = 6)
+plt.colorbar(label=r'$log_{10}$', fraction=0.04, aspect=6)
 fig.text(.77, .22, str(date.today()), ha='center')
 
 plt.savefig(args.output, dpi = 300, bbox_inches='tight')
