@@ -1,0 +1,45 @@
+36989,VA,Vatican City
+54624,SM,San Marino
+192774,GM,The Gambia
+192775,SN,Senegal
+270009,GG,Guernsey
+285454,VG,British Virgin Islands
+287083,GY,Guyana
+287667,CR,Costa Rica
+287668,PA,Panama
+287670,HN,Honduras
+305095,QA,Qatar
+305099,KW,Kuwait
+305138,OM,Oman
+307584,SA,Saudi Arabia
+307763,AE,United Arab Emirates
+307823,DM,Dominica
+307828,DO,Dominican Republic
+307829,HT,Haiti
+367988,JE,Jersey
+378734,BH,Bahrain
+535880,ST,São Tomé and Príncipe
+536780,SG,Singapore
+536899,KN,Saint Kitts and Nevis
+536900,AG,Antigua and Barbuda
+537257,MS,Montserrat
+547479,TC,Turks and Caicos Islands
+547511,BB,Barbados
+550725,VC,Saint Vincent and the Grenadines
+550727,GD,Grenada
+550728,LC,Saint Lucia
+555717,TT,Trinidad and Tobago
+1278736,GI,Gibraltar
+1473946,IL,Israel
+1520612,SV,El Salvador
+1964272,SH,"Saint Helena, Ascension and Tristan da Cunha"
+1983628,GS,South Georgia and the South Sandwich Islands
+1993208,BM,Bermuda
+1993867,IO,British Indian Ocean Territory
+2103120,BN,Brunei
+2108121,MY,Malaysia
+2177161,AI,Anguilla
+2185366,KY,Cayman Islands
+2185374,FK,Falkland Islands
+2185375,PN,Pitcairn Islands
+2186600,TK,Tokelau

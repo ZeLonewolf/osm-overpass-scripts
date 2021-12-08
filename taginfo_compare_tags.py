@@ -41,8 +41,13 @@ with open('OSM_regions.json') as f: regions=json.load(f)
 
 def recursive_regions(regions, max_lvl=args.level):
     output = []
-    if regions['admin_level']>=max_lvl or not regions['subregions']:
-        return [(regions['name'], regions['taginfo_url'])]
+    is_rus = int(regions['name']=="Russia")
+    # Since russia is so large, taginfo server treats it as separate continent.
+    if regions['admin_level']>=max_lvl-is_rus or not regions['subregions']:
+        iso=None
+        if 'iso' in regions:
+            iso=regions['iso']
+        return [(regions['name'], iso, regions['taginfo_url'])]
     for region in regions['subregions']:
         output+=recursive_regions(region, max_lvl)
     return output
@@ -66,7 +71,7 @@ print("------------------------------")
 
 # iso_a2 must be present because it's used for R mapping.
 output = [f"iso_a2,name,{args.tag1},{args.tag2}"]
-for region, server in list_of_taginfo_servers:
+for region, iso, server in list_of_taginfo_servers:
     if '=' in args.tag1: 
         url1 = server+'/api/4/tag/stats'
         params1 = {'key':args.tag1.split('=')[0],'value':'='.join(args.tag1.split('=')[1:])}
@@ -80,19 +85,21 @@ for region, server in list_of_taginfo_servers:
         url2=server+'/api/4/key/stats'
         params2 = {'key':args.tag2}
     req_ok=False
+    failures=1
     while not req_ok:
         resp1=requests.get(url1, params1)
         resp2=requests.get(url2, params2)
         if resp1.status_code !=200 or resp2.status_code !=200:
             #print(resp1.content)
             #print(resp2.content)
-            time.sleep(0.25)
+            time.sleep(0.25*failures)
         else:req_ok=True
+        failures+=1
+        if failures % 4 == 0:
+            print(f'Trying to contact taginfo at {url1}, attempt {failures}.')
+        
     count1=list(filter(lambda x: x['type']=='all', resp1.json()['data']))[0]['count']
     count2=list(filter(lambda x: x['type']=='all', resp2.json()['data']))[0]['count']
-    iso = ''
-    if region in dict_of_country_codes:
-        iso=dict_of_country_codes[region]
     print(f"[{iso} {region}]: {count1}, {count2}")
     if not iso:
         iso='FIXME'

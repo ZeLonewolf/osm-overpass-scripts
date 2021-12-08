@@ -91,4 +91,6 @@ For python:
 ## Taginfo version
 Usually you don't need newest country tag statistics for latest minute, but you would satisfy also with day or two old information. For such purpose this repo features `taginfo_compare_tags` scripts, which will use taginfo pages to get precompiled tag counts faster than any overpass could offer. Two scripts rely heavily on [[OSM_regions.json]] datafile, which namely contains information on *(almost)* all the Geofabrik's taginfo servers in structured manner. List has been compiled automatically, but information for some subregions and additional information were added manually. 
 
-TODO: Add ISO codes to subregions. Support for subregions will need special treatment in R.
+Using this version proceses ~150 countries in 30 seconds using taginfo, and remaining 45 in 12 minutes using overpass. Option to drop overpass is not implemented yet. Potential way to speed up overpass, is merge small countries into single overpass query.
+
+TODO: Add plotting support for subregions. Support for subregions will need special treatment in R.

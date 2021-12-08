@@ -418,13 +418,6 @@
           "iso": "AF"
         },
         {
-          "name": "East Timor",
-          "admin_level": 2,
-          "taginfo_url": "https://taginfo.geofabrik.de/asia/east-timor",
-          "subregions": [],
-          "iso": "TL"
-        },
-        {
           "name": "Armenia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/armenia",
@@ -2005,10 +1998,11 @@
           "iso": "LU"
         },
         {
-          "name": "Macedonia",
+          "name": "North Macedonia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/macedonia",
-          "subregions": []
+          "subregions": [],
+          "iso": "MK"
         },
         {
           "name": "Malta",
