@@ -12,235 +12,274 @@
           "name": "Algeria",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/algeria",
-          "subregions": []
+          "subregions": [],
+          "iso": "DZ"
         },
         {
           "name": "Angola",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/angola",
-          "subregions": []
+          "subregions": [],
+          "iso": "AO"
         },
         {
           "name": "Benin",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/benin",
-          "subregions": []
+          "subregions": [],
+          "iso": "BJ"
         },
         {
           "name": "Botswana",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/botswana",
-          "subregions": []
+          "subregions": [],
+          "iso": "BW"
         },
         {
           "name": "Burkina Faso",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/burkina-faso",
-          "subregions": []
+          "subregions": [],
+          "iso": "BF"
         },
         {
           "name": "Burundi",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/burundi",
-          "subregions": []
+          "subregions": [],
+          "iso": "BI"
         },
         {
           "name": "Cameroon",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/cameroon",
-          "subregions": []
+          "subregions": [],
+          "iso": "CM"
         },
         {
           "name": "Canary Islands",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/canary-islands",
-          "subregions": []
+          "subregions": [],
+          "iso": "ES-CN"
         },
         {
           "name": "Cape Verde",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/cape-verde",
-          "subregions": []
+          "subregions": [],
+          "iso": "CV"
         },
         {
           "name": "Central African Republic",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/central-african-republic",
-          "subregions": []
+          "subregions": [],
+          "iso": "CF"
         },
         {
           "name": "Chad",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/chad",
-          "subregions": []
+          "subregions": [],
+          "iso": "TD"
         },
         {
           "name": "Comores",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/comores",
-          "subregions": []
+          "subregions": [],
+          "iso": "KM"
         },
         {
           "name": "Congo (Republic/Brazzaville)",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/congo-brazzaville",
-          "subregions": []
+          "subregions": [],
+          "iso": "CG"
         },
         {
           "name": "Congo (Democratic Republic/Kinshasa)",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/congo-democratic-republic",
-          "subregions": []
+          "subregions": [],
+          "iso": "CD"
         },
         {
           "name": "Djibouti",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/djibouti",
-          "subregions": []
+          "subregions": [],
+          "iso": "DJ"
         },
         {
           "name": "Egypt",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/egypt",
-          "subregions": []
+          "subregions": [],
+          "iso": "EG"
         },
         {
           "name": "Equatorial Guinea",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/equatorial-guinea",
-          "subregions": []
+          "subregions": [],
+          "iso": "GQ"
         },
         {
           "name": "Eritrea",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/eritrea",
-          "subregions": []
+          "subregions": [],
+          "iso": "ER"
         },
         {
           "name": "Ethiopia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/ethiopia",
-          "subregions": []
+          "subregions": [],
+          "iso": "ET"
         },
         {
           "name": "Gabon",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/gabon",
-          "subregions": []
+          "subregions": [],
+          "iso": "GA"
         },
         {
           "name": "Ghana",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/ghana",
-          "subregions": []
+          "subregions": [],
+          "iso": "GH"
         },
         {
           "name": "Guinea",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/guinea",
-          "subregions": []
+          "subregions": [],
+          "iso": "GN"
         },
         {
           "name": "Guinea-Bissau",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/guinea-bissau",
-          "subregions": []
+          "subregions": [],
+          "iso": "GW"
         },
         {
           "name": "Ivory Coast",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/ivory-coast",
-          "subregions": []
+          "subregions": [],
+          "iso": "CI"
         },
         {
           "name": "Kenya",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/kenya",
-          "subregions": []
+          "subregions": [],
+          "iso": "KE"
         },
         {
           "name": "Lesotho",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/lesotho",
-          "subregions": []
+          "subregions": [],
+          "iso": "LS"
         },
         {
           "name": "Liberia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/liberia",
-          "subregions": []
+          "subregions": [],
+          "iso": "LR"
         },
         {
           "name": "Libya",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/libya",
-          "subregions": []
+          "subregions": [],
+          "iso": "LY"
         },
         {
           "name": "Madagascar",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/madagascar",
-          "subregions": []
+          "subregions": [],
+          "iso": "MG"
         },
         {
           "name": "Malawi",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/malawi",
-          "subregions": []
+          "subregions": [],
+          "iso": "MW"
         },
         {
           "name": "Mali",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/mali",
-          "subregions": []
+          "subregions": [],
+          "iso": "ML"
         },
         {
           "name": "Mauritania",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/mauritania",
-          "subregions": []
+          "subregions": [],
+          "iso": "MR"
         },
         {
           "name": "Mauritius",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/mauritius",
-          "subregions": []
+          "subregions": [],
+          "iso": "MU"
         },
         {
           "name": "Morocco",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/morocco",
-          "subregions": []
+          "subregions": [],
+          "iso": "MA"
         },
         {
           "name": "Mozambique",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/mozambique",
-          "subregions": []
+          "subregions": [],
+          "iso": "MZ"
         },
         {
           "name": "Namibia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/namibia",
-          "subregions": []
+          "subregions": [],
+          "iso": "NA"
         },
         {
           "name": "Niger",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/niger",
-          "subregions": []
+          "subregions": [],
+          "iso": "NE"
         },
         {
           "name": "Nigeria",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/nigeria",
-          "subregions": []
+          "subregions": [],
+          "iso": "NG"
         },
         {
           "name": "Rwanda",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/rwanda",
-          "subregions": []
+          "subregions": [],
+          "iso": "RW"
         },
         {
           "name": "Saint Helena, Ascension, and Tristan da Cunha",
@@ -264,25 +303,29 @@
           "name": "Seychelles",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/seychelles",
-          "subregions": []
+          "subregions": [],
+          "iso": "SC"
         },
         {
           "name": "Sierra Leone",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/sierra-leone",
-          "subregions": []
+          "subregions": [],
+          "iso": "SL"
         },
         {
           "name": "Somalia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/somalia",
-          "subregions": []
+          "subregions": [],
+          "iso": "SO"
         },
         {
           "name": "South Africa",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/south-africa",
-          "subregions": []
+          "subregions": [],
+          "iso": "ZA"
         },
         {
           "name": "South Africa (includes Lesotho)",
@@ -294,55 +337,64 @@
           "name": "South Sudan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/south-sudan",
-          "subregions": []
+          "subregions": [],
+          "iso": "SS"
         },
         {
           "name": "Sudan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/sudan",
-          "subregions": []
+          "subregions": [],
+          "iso": "SD"
         },
         {
           "name": "Swaziland",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/swaziland",
-          "subregions": []
+          "subregions": [],
+          "iso": "SZ"
         },
         {
           "name": "Zambia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/zambia",
-          "subregions": []
+          "subregions": [],
+          "iso": "ZM"
         },
         {
           "name": "Zimbabwe",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/zimbabwe",
-          "subregions": []
+          "subregions": [],
+          "iso": "ZW"
         },
         {
           "name": "Tanzania",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/tanzania",
-          "subregions": []
+          "subregions": [],
+          "iso": "TZ"
         },
         {
           "name": "Togo",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/togo",
-          "subregions": []
+          "subregions": [],
+          "iso": "TG"
         },
         {
           "name": "Tunisia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/tunisia",
-          "subregions": []
+          "subregions": [],
+          "iso": "TN"
         },
         {
           "name": "Uganda",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/africa/uganda",
-          "subregions": []
+          "subregions": [],
+          "iso": "UG"
         }
       ]
     },
@@ -350,7 +402,8 @@
       "name": "Antarctica",
       "admin_level": 1,
       "taginfo_url": "https://taginfo.geofabrik.de/antarctica",
-      "subregions": []
+      "subregions": [],
+      "iso": "AQ"
     },
     {
       "name": "Asia",
@@ -361,43 +414,50 @@
           "name": "Afghanistan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/afghanistan",
-          "subregions": []
+          "subregions": [],
+          "iso": "AF"
         },
         {
           "name": "Armenia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/armenia",
-          "subregions": []
+          "subregions": [],
+          "iso": "AM"
         },
         {
           "name": "Azerbaijan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/azerbaijan",
-          "subregions": []
+          "subregions": [],
+          "iso": "AZ"
         },
         {
           "name": "Bangladesh",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/bangladesh",
-          "subregions": []
+          "subregions": [],
+          "iso": "BD"
         },
         {
           "name": "Bhutan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/bhutan",
-          "subregions": []
+          "subregions": [],
+          "iso": "BT"
         },
         {
           "name": "Cambodia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/cambodia",
-          "subregions": []
+          "subregions": [],
+          "iso": "KH"
         },
         {
           "name": "China",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/china",
-          "subregions": []
+          "subregions": [],
+          "iso": "CN"
         },
         {
           "name": "GCC States",
@@ -409,25 +469,29 @@
           "name": "India",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/india",
-          "subregions": []
+          "subregions": [],
+          "iso": "IN"
         },
         {
           "name": "Indonesia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/indonesia",
-          "subregions": []
+          "subregions": [],
+          "iso": "ID"
         },
         {
           "name": "Iran",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/iran",
-          "subregions": []
+          "subregions": [],
+          "iso": "IR"
         },
         {
           "name": "Iraq",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/iraq",
-          "subregions": []
+          "subregions": [],
+          "iso": "IQ"
         },
         {
           "name": "Israel and Palestine",
@@ -456,7 +520,8 @@
               "name": "Hokkaidō",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/asia/japan/hokkaido",
-              "subregions": []
+              "subregions": [],
+              "iso": "JP-01"
             },
             {
               "name": "Kansai region (a.k.a. Kinki region)",
@@ -488,37 +553,43 @@
               "taginfo_url": "https://taginfo.geofabrik.de/asia/japan/tohoku",
               "subregions": []
             }
-          ]
+          ],
+          "iso": "JP"
         },
         {
           "name": "Jordan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/jordan",
-          "subregions": []
+          "subregions": [],
+          "iso": "JO"
         },
         {
           "name": "Kazakhstan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/kazakhstan",
-          "subregions": []
+          "subregions": [],
+          "iso": "KZ"
         },
         {
           "name": "Kyrgyzstan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/kyrgyzstan",
-          "subregions": []
+          "subregions": [],
+          "iso": "KG"
         },
         {
           "name": "Laos",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/laos",
-          "subregions": []
+          "subregions": [],
+          "iso": "LA"
         },
         {
           "name": "Lebanon",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/lebanon",
-          "subregions": []
+          "subregions": [],
+          "iso": "LB"
         },
         {
           "name": "Malaysia, Singapore, and Brunei",
@@ -530,103 +601,120 @@
           "name": "Maldives",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/maldives",
-          "subregions": []
+          "subregions": [],
+          "iso": "MV"
         },
         {
           "name": "Mongolia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/mongolia",
-          "subregions": []
+          "subregions": [],
+          "iso": "MN"
         },
         {
           "name": "Myanmar (a.k.a. Burma)",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/myanmar",
-          "subregions": []
+          "subregions": [],
+          "iso": "MM"
         },
         {
           "name": "Nepal",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/nepal",
-          "subregions": []
+          "subregions": [],
+          "iso": "NP"
         },
         {
           "name": "North Korea",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/north-korea",
-          "subregions": []
+          "subregions": [],
+          "iso": "KP"
         },
         {
           "name": "Pakistan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/pakistan",
-          "subregions": []
+          "subregions": [],
+          "iso": "PK"
         },
         {
           "name": "Philippines",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/philippines",
-          "subregions": []
+          "subregions": [],
+          "iso": "PH"
         },
         {
           "name": "South Korea",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/south-korea",
-          "subregions": []
+          "subregions": [],
+          "iso": "KR"
         },
         {
           "name": "Sri Lanka",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/sri-lanka",
-          "subregions": []
+          "subregions": [],
+          "iso": "LK"
         },
         {
           "name": "Syria",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/syria",
-          "subregions": []
+          "subregions": [],
+          "iso": "SY"
         },
         {
           "name": "Taiwan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/taiwan",
-          "subregions": []
+          "subregions": [],
+          "iso": "TW"
         },
         {
           "name": "Tajikistan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/tajikistan",
-          "subregions": []
+          "subregions": [],
+          "iso": "TJ"
         },
         {
           "name": "Thailand",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/thailand",
-          "subregions": []
+          "subregions": [],
+          "iso": "TH"
         },
         {
           "name": "Turkmenistan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/turkmenistan",
-          "subregions": []
+          "subregions": [],
+          "iso": "TM"
         },
         {
           "name": "Uzbekistan",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/uzbekistan",
-          "subregions": []
+          "subregions": [],
+          "iso": "UZ"
         },
         {
           "name": "Vietnam",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/vietnam",
-          "subregions": []
+          "subregions": [],
+          "iso": "VN"
         },
         {
           "name": "Yemen",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/asia/yemen",
-          "subregions": []
+          "subregions": [],
+          "iso": "YE"
         }
       ]
     },
@@ -639,31 +727,36 @@
           "name": "Australia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/australia",
-          "subregions": []
+          "subregions": [],
+          "iso": "AU"
         },
         {
           "name": "Fiji",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/fiji",
-          "subregions": []
+          "subregions": [],
+          "iso": "FJ"
         },
         {
           "name": "New Caledonia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/new-caledonia",
-          "subregions": []
+          "subregions": [],
+          "iso": "NC"
         },
         {
           "name": "New Zealand",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/new-zealand",
-          "subregions": []
+          "subregions": [],
+          "iso": "NZ"
         },
         {
           "name": "Papua New Guinea",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/australia-oceania/papua-new-guinea",
-          "subregions": []
+          "subregions": [],
+          "iso": "PG"
         }
       ]
     },
@@ -676,25 +769,29 @@
           "name": "Bahamas",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/central-america/bahamas",
-          "subregions": []
+          "subregions": [],
+          "iso": "BS"
         },
         {
           "name": "Belize",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/central-america/belize",
-          "subregions": []
+          "subregions": [],
+          "iso": "BZ"
         },
         {
           "name": "Cuba",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/central-america/cuba",
-          "subregions": []
+          "subregions": [],
+          "iso": "CU"
         },
         {
           "name": "Guatemala",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/central-america/guatemala",
-          "subregions": []
+          "subregions": [],
+          "iso": "GT"
         },
         {
           "name": "Haiti and Dominican Republic",
@@ -706,13 +803,15 @@
           "name": "Jamaica",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/central-america/jamaica",
-          "subregions": []
+          "subregions": [],
+          "iso": "JM"
         },
         {
           "name": "Nicaragua",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/central-america/nicaragua",
-          "subregions": []
+          "subregions": [],
+          "iso": "NI"
         }
       ]
     },
@@ -725,7 +824,8 @@
           "name": "Albania",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/albania",
-          "subregions": []
+          "subregions": [],
+          "iso": "AL"
         },
         {
           "name": "Alps",
@@ -737,37 +837,43 @@
           "name": "Andorra",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/andorra",
-          "subregions": []
+          "subregions": [],
+          "iso": "AD"
         },
         {
           "name": "Azores",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/azores",
-          "subregions": []
+          "subregions": [],
+          "iso": "PT-20"
         },
         {
           "name": "Austria",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/austria",
-          "subregions": []
+          "subregions": [],
+          "iso": "AT"
         },
         {
           "name": "Belarus",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/belarus",
-          "subregions": []
+          "subregions": [],
+          "iso": "BY"
         },
         {
           "name": "Belgium",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/belgium",
-          "subregions": []
+          "subregions": [],
+          "iso": "BE"
         },
         {
           "name": "Bosnia-Herzegovina",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/bosnia-herzegovina",
-          "subregions": []
+          "subregions": [],
+          "iso": "BA"
         },
         {
           "name": "Britain and Ireland",
@@ -779,49 +885,63 @@
           "name": "Bulgaria",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/bulgaria",
-          "subregions": []
+          "subregions": [],
+          "iso": "BG"
         },
         {
           "name": "Croatia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/croatia",
-          "subregions": []
+          "subregions": [],
+          "iso": "HR"
         },
         {
           "name": "Czech Republic",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/czech-republic",
-          "subregions": []
+          "subregions": [],
+          "iso": "CZ"
         },
         {
           "name": "Cyprus",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/cyprus",
+          "subregions": [],
+          "iso": "CY"
+        },
+        {
+          "name": "Germany, Austria, Switzerland",
+          "admin_level": 2,
+          "taginfo_url": "https://taginfo.geofabrik.de/europe/dach",
           "subregions": []
         },
         {
           "name": "Denmark",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/denmark",
-          "subregions": []
+          "subregions": [],
+          "iso": "DK"
         },
         {
           "name": "Estonia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/estonia",
-          "subregions": []
+          "subregions": [],
+          "iso": "EE"
         },
         {
           "name": "Faroe Islands",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/faroe-islands",
-          "subregions": []
+          "subregions": [],
+          "iso": "FO"
         },
         {
           "name": "Finland",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/finland",
-          "subregions": []
+          "subregions": [],
+          "iso": "FI"
         },
         {
           "name": "France",
@@ -832,171 +952,200 @@
               "name": "Alsace",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/alsace",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-A"
             },
             {
               "name": "Aquitaine",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/aquitaine",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-B"
             },
             {
               "name": "Auvergne",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/auvergne",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-C"
             },
             {
               "name": "Basse-Normandie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/basse-normandie",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-P"
             },
             {
               "name": "Bourgogne",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/bourgogne",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-D"
             },
             {
               "name": "Bretagne",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/bretagne",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-E"
             },
             {
               "name": "Centre",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/centre",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-F"
             },
             {
               "name": "Champagne Ardenne",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/champagne-ardenne",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-G"
             },
             {
               "name": "Corse",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/corse",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-H"
             },
             {
               "name": "Franche Comte",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/franche-comte",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-I"
             },
             {
               "name": "Guadeloupe",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/guadeloupe",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-GP"
             },
             {
               "name": "Guyane",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/guyane",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-GF"
             },
             {
               "name": "Haute-Normandie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/haute-normandie",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-Q"
             },
             {
               "name": "Ile-de-France",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/ile-de-france",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-J"
             },
             {
               "name": "Languedoc-Roussillon",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/languedoc-roussillon",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-K"
             },
             {
               "name": "Limousin",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/limousin",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-L"
             },
             {
               "name": "Lorraine",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/lorraine",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-M"
             },
             {
               "name": "Martinique",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/martinique",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-MQ"
             },
             {
               "name": "Mayotte",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/mayotte",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-YT"
             },
             {
               "name": "Midi-Pyrenees",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/midi-pyrenees",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-N"
             },
             {
               "name": "Nord-Pas-de-Calais",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/nord-pas-de-calais",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-O"
             },
             {
               "name": "Pays de la Loire",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/pays-de-la-loire",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-R"
             },
             {
               "name": "Picardie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/picardie",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-S"
             },
             {
               "name": "Poitou-Charentes",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/poitou-charentes",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-T"
             },
             {
               "name": "Provence Alpes-Cote-d'Azur",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/provence-alpes-cote-d-azur",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-U"
             },
             {
               "name": "Reunion",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/reunion",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-RE"
             },
             {
               "name": "Rhone-Alpes",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/france/rhone-alpes",
-              "subregions": []
+              "subregions": [],
+              "iso": "FR-V"
             }
-          ]
+          ],
+          "iso": "FR"
         },
         {
           "name": "Georgia (Eastern Europe)",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/georgia",
-          "subregions": []
+          "subregions": [],
+          "iso": "GE"
         },
         {
           "name": "Germany",
@@ -1007,99 +1156,116 @@
               "name": "Baden-Württemberg",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/baden-wuerttemberg",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-BW"
             },
             {
               "name": "Bayern",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bayern",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-BY"
             },
             {
               "name": "Berlin",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/berlin",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-BE"
             },
             {
               "name": "Brandenburg (mit Berlin)",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/brandenburg",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-BB"
             },
             {
               "name": "Bremen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/bremen",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-HB"
             },
             {
               "name": "Hamburg",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/hamburg",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-HH"
             },
             {
               "name": "Hessen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/hessen",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-HE"
             },
             {
               "name": "Mecklenburg-Vorpommern",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/mecklenburg-vorpommern",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-MV"
             },
             {
               "name": "Niedersachsen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/niedersachsen",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-NI"
             },
             {
               "name": "Nordrhein-Westfalen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/nordrhein-westfalen",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-NW"
             },
             {
               "name": "Rheinland-Pfalz",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/rheinland-pfalz",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-RP"
             },
             {
               "name": "Saarland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/saarland",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-SL"
             },
             {
               "name": "Sachsen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/sachsen",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-SN"
             },
             {
               "name": "Sachsen-Anhalt",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/sachsen-anhalt",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-ST"
             },
             {
               "name": "Schleswig-Holstein",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/schleswig-holstein",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-SH"
             },
             {
               "name": "Thüringen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/germany/thueringen",
-              "subregions": []
+              "subregions": [],
+              "iso": "DE-TH"
             }
-          ]
+          ],
+          "iso": "DE"
         },
         {
           "name": "Great Britain",
@@ -1110,51 +1276,60 @@
               "name": "England",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/england",
-              "subregions": []
+              "subregions": [],
+              "iso": "GB-ENG"
             },
             {
               "name": "Scotland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/scotland",
-              "subregions": []
+              "subregions": [],
+              "iso": "GB-SCT"
             },
             {
               "name": "Wales",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/great-britain/wales",
-              "subregions": []
+              "subregions": [],
+              "iso": "GB-WLS"
             }
-          ]
+          ],
+          "iso": "GB"
         },
         {
           "name": "Greece",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/greece",
-          "subregions": []
+          "subregions": [],
+          "iso": "GR"
         },
         {
           "name": "Hungary",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/hungary",
-          "subregions": []
+          "subregions": [],
+          "iso": "HU"
         },
         {
           "name": "Iceland",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/iceland",
-          "subregions": []
+          "subregions": [],
+          "iso": "IS"
         },
         {
           "name": "Ireland and Northern Ireland",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/ireland-and-northern-ireland",
-          "subregions": []
+          "subregions": [],
+          "iso": "IE"
         },
         {
           "name": "Isle of Man",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/isle-of-man",
-          "subregions": []
+          "subregions": [],
+          "iso": "IM"
         },
         {
           "name": "Italy",
@@ -1177,7 +1352,8 @@
               "name": "Nord-Est",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/italy/nord-est",
-              "subregions": []
+              "subregions": [],
+              "iso": "HT-NE"
             },
             {
               "name": "Nord-Ovest",
@@ -1189,39 +1365,46 @@
               "name": "Sud",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/italy/sud",
-              "subregions": []
+              "subregions": [],
+              "iso": "RW-05"
             }
-          ]
+          ],
+          "iso": "IT"
         },
         {
           "name": "Kosovo",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/kosovo",
-          "subregions": []
+          "subregions": [],
+          "iso": "XK"
         },
         {
           "name": "Latvia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/latvia",
-          "subregions": []
+          "subregions": [],
+          "iso": "LV"
         },
         {
           "name": "Liechtenstein",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/liechtenstein",
-          "subregions": []
+          "subregions": [],
+          "iso": "LI"
         },
         {
           "name": "Lithuania",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/lithuania",
-          "subregions": []
+          "subregions": [],
+          "iso": "LT"
         },
         {
           "name": "Luxembourg",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/luxembourg",
-          "subregions": []
+          "subregions": [],
+          "iso": "LU"
         },
         {
           "name": "Macedonia",
@@ -1233,25 +1416,29 @@
           "name": "Malta",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/malta",
-          "subregions": []
+          "subregions": [],
+          "iso": "MT"
         },
         {
           "name": "Moldova",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/moldova",
-          "subregions": []
+          "subregions": [],
+          "iso": "MD"
         },
         {
           "name": "Monaco",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/monaco",
-          "subregions": []
+          "subregions": [],
+          "iso": "MC"
         },
         {
           "name": "Montenegro",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/montenegro",
-          "subregions": []
+          "subregions": [],
+          "iso": "ME"
         },
         {
           "name": "Netherlands",
@@ -1262,81 +1449,95 @@
               "name": "Drenthe",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/drenthe",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-DR"
             },
             {
               "name": "Flevoland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/flevoland",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-FL"
             },
             {
               "name": "Friesland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/friesland",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-FR"
             },
             {
               "name": "Gelderland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/gelderland",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-GE"
             },
             {
               "name": "Groningen",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/groningen",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-GR"
             },
             {
               "name": "Limburg",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/limburg",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-LI"
             },
             {
               "name": "Noord-Brabant",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/noord-brabant",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-NB"
             },
             {
               "name": "Noord-Holland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/noord-holland",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-NH"
             },
             {
               "name": "Overijssel",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/overijssel",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-OV"
             },
             {
               "name": "Zeeland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/zeeland",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-ZE"
             },
             {
               "name": "Zuid-Holland",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/zuid-holland",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-ZH"
             },
             {
               "name": "Utrecht",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/netherlands/utrecht",
-              "subregions": []
+              "subregions": [],
+              "iso": "NL-UT"
             }
-          ]
+          ],
+          "iso": "NL"
         },
         {
           "name": "Norway",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/norway",
-          "subregions": []
+          "subregions": [],
+          "iso": "NO"
         },
         {
           "name": "Poland",
@@ -1347,159 +1548,186 @@
               "name": "Województwo dolnośląskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/dolnoslaskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-02"
             },
             {
               "name": "Województwo kujawsko-pomorskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/kujawsko-pomorskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-04"
             },
             {
               "name": "Województwo łódzkie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/lodzkie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-10"
             },
             {
               "name": "Województwo lubelskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/lubelskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-06"
             },
             {
               "name": "Województwo lubuskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/lubuskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-08"
             },
             {
               "name": "Województwo małopolskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/malopolskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-12"
             },
             {
               "name": "Województwo mazowieckie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/mazowieckie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-14"
             },
             {
               "name": "Województwo opolskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/opolskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-16"
             },
             {
               "name": "Województwo podkarpackie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/podkarpackie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-18"
             },
             {
               "name": "Województwo podlaskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/podlaskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-20"
             },
             {
               "name": "Województwo pomorskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/pomorskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-22"
             },
             {
               "name": "Województwo śląskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/slaskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-24"
             },
             {
               "name": "Województwo świętokrzyskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/swietokrzyskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-26"
             },
             {
               "name": "Województwo zachodniopomorskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/zachodniopomorskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-32"
             },
             {
               "name": "Województwo warmińsko-mazurskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/warminsko-mazurskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-28"
             },
             {
               "name": "Województwo wielkopolskie",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/europe/poland/wielkopolskie",
-              "subregions": []
+              "subregions": [],
+              "iso": "PL-30"
             }
-          ]
+          ],
+          "iso": "PL"
         },
         {
           "name": "Portugal",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/portugal",
-          "subregions": []
+          "subregions": [],
+          "iso": "PT"
         },
         {
           "name": "Romania",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/romania",
-          "subregions": []
+          "subregions": [],
+          "iso": "RO"
         },
         {
           "name": "Serbia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/serbia",
-          "subregions": []
+          "subregions": [],
+          "iso": "RS"
         },
         {
           "name": "Slovakia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/slovakia",
-          "subregions": []
+          "subregions": [],
+          "iso": "SK"
         },
         {
           "name": "Slovenia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/slovenia",
-          "subregions": []
+          "subregions": [],
+          "iso": "SI"
         },
         {
           "name": "Spain",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/spain",
-          "subregions": []
+          "subregions": [],
+          "iso": "ES"
         },
         {
           "name": "Sweden",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/sweden",
-          "subregions": []
+          "subregions": [],
+          "iso": "SE"
         },
         {
           "name": "Switzerland",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/switzerland",
-          "subregions": []
+          "subregions": [],
+          "iso": "CH"
         },
         {
           "name": "Turkey",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/turkey",
-          "subregions": []
+          "subregions": [],
+          "iso": "TR"
         },
         {
           "name": "Ukraine (with Crimea)",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/europe/ukraine",
-          "subregions": []
+          "subregions": [],
+          "iso": "UA"
         }
       ]
     },
@@ -1517,93 +1745,109 @@
               "name": "Alberta",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/alberta",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-AB"
             },
             {
               "name": "British Columbia",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/british-columbia",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-BC"
             },
             {
               "name": "Manitoba",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/manitoba",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-MB"
             },
             {
               "name": "New Brunswick",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/new-brunswick",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-NB"
             },
             {
               "name": "Newfoundland and Labrador",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/newfoundland-and-labrador",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-NL"
             },
             {
               "name": "Northwest Territories",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/northwest-territories",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-NT"
             },
             {
               "name": "Nova Scotia",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/nova-scotia",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-NS"
             },
             {
               "name": "Nunavut",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/nunavut",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-NU"
             },
             {
               "name": "Ontario",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/ontario",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-ON"
             },
             {
               "name": "Prince Edward Island",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/prince-edward-island",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-PE"
             },
             {
               "name": "Quebec",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/quebec",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-QC"
             },
             {
               "name": "Saskatchewan",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/saskatchewan",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-SK"
             },
             {
               "name": "Yukon",
               "admin_level": 3,
               "taginfo_url": "https://taginfo.geofabrik.de/north-america/canada/yukon",
-              "subregions": []
+              "subregions": [],
+              "iso": "CA-YT"
             }
-          ]
+          ],
+          "iso": "CA"
         },
         {
           "name": "Greenland",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/north-america/greenland",
-          "subregions": []
+          "subregions": [],
+          "iso": "GL"
         },
         {
           "name": "Mexico",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/north-america/mexico",
-          "subregions": []
+          "subregions": [],
+          "iso": "MX"
         },
         {
           "name": "US",
@@ -1619,73 +1863,85 @@
                   "name": "Illinois",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/illinois",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-IL"
                 },
                 {
                   "name": "Indiana",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/indiana",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-IN"
                 },
                 {
                   "name": "Iowa",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/iowa",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-IA"
                 },
                 {
                   "name": "Kansas",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/kansas",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-KS"
                 },
                 {
                   "name": "Michigan",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/michigan",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MI"
                 },
                 {
                   "name": "Minnesota",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/minnesota",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MN"
                 },
                 {
                   "name": "Missouri",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/missouri",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MO"
                 },
                 {
                   "name": "Nebraska",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/nebraska",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NE"
                 },
                 {
                   "name": "North Dakota",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/north-dakota",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-ND"
                 },
                 {
                   "name": "Ohio",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/ohio",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-OH"
                 },
                 {
                   "name": "South Dakota",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/south-dakota",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-SD"
                 },
                 {
                   "name": "Wisconsin",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/wisconsin",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-WI"
                 }
               ]
             },
@@ -1698,73 +1954,85 @@
                   "name": "Connecticut",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/connecticut",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-CT"
                 },
                 {
                   "name": "District of Columbia",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/district-of-columbia",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-DC"
                 },
                 {
                   "name": "Maine",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/maine",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-ME"
                 },
                 {
                   "name": "Massachusetts",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/massachusetts",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MA"
                 },
                 {
                   "name": "New Hampshire",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/new-hampshire",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NH"
                 },
                 {
                   "name": "New Jersey",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/new-jersey",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NJ"
                 },
                 {
                   "name": "New York",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/new-york",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NY"
                 },
                 {
                   "name": "Pennsylvania",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/pennsylvania",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-PA"
                 },
                 {
                   "name": "Puerto Rico",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/puerto-rico",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-PR"
                 },
                 {
                   "name": "Rhode Island",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/rhode-island",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-RI"
                 },
                 {
                   "name": "United States Virgin Islands",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/us-virgin-islands",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-VI"
                 },
                 {
                   "name": "Vermont",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/vermont",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-VT"
                 }
               ]
             },
@@ -1777,13 +2045,15 @@
                   "name": "Alaska",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/alaska",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-AK"
                 },
                 {
                   "name": "Hawaii",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/hawaii",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-HI"
                 }
               ]
             },
@@ -1796,97 +2066,113 @@
                   "name": "Alabama",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/alabama",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-AL"
                 },
                 {
                   "name": "Arkansas",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/arkansas",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-AR"
                 },
                 {
                   "name": "Delaware",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/delaware",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-DE"
                 },
                 {
                   "name": "Florida",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/florida",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "UY-FD"
                 },
                 {
                   "name": "Georgia",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/georgia",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-GA"
                 },
                 {
                   "name": "Kentucky",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/kentucky",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-KY"
                 },
                 {
                   "name": "Louisiana",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/louisiana",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-LA"
                 },
                 {
                   "name": "Maryland",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/maryland",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MD"
                 },
                 {
                   "name": "Mississippi",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/mississippi",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MS"
                 },
                 {
                   "name": "North Carolina",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/north-carolina",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NC"
                 },
                 {
                   "name": "Oklahoma",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/oklahoma",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-OK"
                 },
                 {
                   "name": "South Carolina",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/south-carolina",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-SC"
                 },
                 {
                   "name": "Tennessee",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/tennessee",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-TN"
                 },
                 {
                   "name": "Texas",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/texas",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-TX"
                 },
                 {
                   "name": "West Virginia",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/west-virginia",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-WV"
                 },
                 {
                   "name": "Virginia",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/virginia",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-VA"
                 }
               ]
             },
@@ -1899,71 +2185,83 @@
                   "name": "Arizona",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/arizona",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-AZ"
                 },
                 {
                   "name": "California",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/california",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-CA"
                 },
                 {
                   "name": "Colorado",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/colorado",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-CO"
                 },
                 {
                   "name": "Idaho",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/idaho",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-ID"
                 },
                 {
                   "name": "Montana",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/montana",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-MT"
                 },
                 {
                   "name": "Nevada",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/nevada",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NV"
                 },
                 {
                   "name": "New Mexico",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/new-mexico",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-NM"
                 },
                 {
                   "name": "Oregon",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/oregon",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-OR"
                 },
                 {
                   "name": "Utah",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/utah",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-UT"
                 },
                 {
                   "name": "Washington",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/washington",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-WA"
                 },
                 {
                   "name": "Wyoming",
                   "admin_level": 4,
                   "taginfo_url": "https://taginfo.geofabrik.de/north-america/us/wyoming",
-                  "subregions": []
+                  "subregions": [],
+                  "iso": "US-WY"
                 }
               ]
             }
-          ]
+          ],
+          "iso": "US"
         }
       ]
     },
@@ -2026,7 +2324,8 @@
           "taginfo_url": "https://taginfo.geofabrik.de/russia/volga-fed-district",
           "subregions": []
         }
-      ]
+      ],
+      "iso": "RU"
     },
     {
       "name": "South America",
@@ -2037,13 +2336,15 @@
           "name": "Argentina",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/argentina",
-          "subregions": []
+          "subregions": [],
+          "iso": "AR"
         },
         {
           "name": "Bolivia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/bolivia",
-          "subregions": []
+          "subregions": [],
+          "iso": "BO"
         },
         {
           "name": "Brazil",
@@ -2080,55 +2381,64 @@
               "taginfo_url": "https://taginfo.geofabrik.de/south-america/brazil/sul",
               "subregions": []
             }
-          ]
+          ],
+          "iso": "BR"
         },
         {
           "name": "Chile",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/chile",
-          "subregions": []
+          "subregions": [],
+          "iso": "CL"
         },
         {
           "name": "Colombia",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/colombia",
-          "subregions": []
+          "subregions": [],
+          "iso": "CO"
         },
         {
           "name": "Ecuador",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/ecuador",
-          "subregions": []
+          "subregions": [],
+          "iso": "EC"
         },
         {
           "name": "Paraguay",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/paraguay",
-          "subregions": []
+          "subregions": [],
+          "iso": "PY"
         },
         {
           "name": "Peru",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/peru",
-          "subregions": []
+          "subregions": [],
+          "iso": "PE"
         },
         {
           "name": "Suriname",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/suriname",
-          "subregions": []
+          "subregions": [],
+          "iso": "SR"
         },
         {
           "name": "Uruguay",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/uruguay",
-          "subregions": []
+          "subregions": [],
+          "iso": "UY"
         },
         {
           "name": "Venezuela",
           "admin_level": 2,
           "taginfo_url": "https://taginfo.geofabrik.de/south-america/venezuela",
-          "subregions": []
+          "subregions": [],
+          "iso": "VE"
         }
       ]
     }
