@@ -46,6 +46,7 @@ Usage:
      --location          - bbox area preset. [Europe, USA, Asia, Africa, NAmerica, SAmerica] (default: whole world)
      --plotbackend       - choose backed for plotting between R and python [R, py] (default: R)
      --throttle <int>    - number of seconds to pause between overpass requests. (default: 1)
+     --adminlevel <int>  - overlay with admin_level boundaries [R plotbacked only] (defalut: off)    
 
 Note: Some tag names need to be quoted e.g. `--tag \"name:etymology:wikidata\"`
 Requires: R of python for plotting

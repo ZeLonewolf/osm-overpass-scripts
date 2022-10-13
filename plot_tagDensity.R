@@ -7,6 +7,7 @@
 #        -w|--binwidth       - size of square for object counting in degrees. 1 means 1˚x1˚ square (defalut: 1)
 #        -b|--bbox           - plot only area within bbox. Four coordinates seprated by , [lat,lon,lat,lon] (defalut: NULL)
 #        -c|--countries      - plot countries' borders [yes|no] (default: no)
+#        -a|--adminlevel     - plot bondaries of admin_level [int] (default: no)
 
 #
 # pipe: ./csv_compare_tags.sh | ./plot_tagDensity.R 
@@ -15,7 +16,7 @@ args = commandArgs(trailingOnly = TRUE)
 
 # Load packages
     packages = c("tidyverse", "ggspatial", "sf", "rnaturalearth", 
-                 "rnaturalearthdata", "rgeos", "cowplot", "optparse", "ggtext")
+                 "rnaturalearthdata", "rgeos", "cowplot", "optparse", "ggtext", "osmdata")
 
     pack_check <- lapply(packages,
                            FUN = function(x) {
@@ -46,7 +47,10 @@ args = commandArgs(trailingOnly = TRUE)
                                         metavar = 'character'),
                         make_option(c("-c", "--countries", type="character"),
                                         default = "no", help = 'whether to plot borders [yes, no] (default: no)',
-                                        metavar = 'character'))
+                                        metavar = 'character'),
+                        make_option(c("-a", "--adminlevel", type="integer"),
+                                        default = 0, help = 'plot administrative boundaries at admin_level [int] (default: no)',
+                                        metavar = 'integer'))
 
     opt_parser <- OptionParser(option_list = option_list)
     opt <- parse_args(opt_parser)
@@ -75,6 +79,16 @@ args = commandArgs(trailingOnly = TRUE)
 # Get BBOX coordinates [minlat,minlon,maxlat,maxlon]
     bbox <- str_split_fixed(opt$bbox, ",", n=4) %>% as.numeric()
 
+# Get admin boundaries from overpass
+    if (opt$adminlevel != 0) {
+        # border <- opq(bbox = c(bbox[1], bbox[2], bbox[3], bbox[4])) %>%
+        border <- opq(bbox = c(bbox[2], bbox[1], bbox[4], bbox[3])) %>%
+                add_osm_feature(key="boundary", value="administrative") %>%
+                add_osm_feature(key="admin_level", value=opt$adminlevel) %>%
+                osmdata_sf()
+    }
+
+
 # Plot object density over world map
     plot <- world %>% 
                 ggplot() +
@@ -95,7 +109,13 @@ args = commandArgs(trailingOnly = TRUE)
                           plot.title.position = "plot",
                           plot.title = element_markdown(),
                           legend.title = element_markdown())
-                                
+
+    # Plot administrative boundaries    
+    if (opt$adminlevel != 0) {
+        plot <- plot +
+            geom_sf(data = border$osm_multipolygon, color = "turquoise", size = 0.2, fill = "transparent")
+    }
+
     if (anyNA(bbox)) {
         print("No bbox set. Plotting for whole world. (If bbox was set check the format lat,lon,lat,lon)")
         plot <- plot +
