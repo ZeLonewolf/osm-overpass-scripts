@@ -21,6 +21,7 @@ throttle=${throttle:-1}
 bbox=${bbox:-}
 location=${location:-}
 plotbackend=${plotbackend:-"R"}
+adminlevel=${adminlevel:-0}
 rate=$(curl -s "${server}/api/status" | grep "Rate limit" | cut -f 3 -d ' ')
 
 
@@ -177,7 +178,7 @@ if [ ! -z "$map" ]; then
     if [ "$plotbackend" = "py" ]; then
         ${0%/*}/plot_tagDensity.py -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries"
     else
-        ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries"
+        ${0%/*}/plot_tagDensity.R -i /tmp/tag_csv.tmp --tag "$tag" -o "$map" --binwidth "$binwidth" --bbox="$bbox" --countries "$countries" --adminlevel "$adminlevel"
     fi
     printf "Saved map: ${YELLOW}${map}${NC}\n"
 fi
