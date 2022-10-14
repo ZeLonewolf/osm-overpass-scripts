@@ -52,8 +52,8 @@ echo "------------------------------"
 while read p; do
   base_area=3600000000
   area_id=`expr $base_area + $p`
-  query=`sed "s/#AREA/$area_id/g; s/#TAG1/$tag1/g; s/#TAG2/$tag2/g" queries/count_tags.op`
-  namequery=`sed "s/#ID/$p/g" queries/id_to_name.op`
+  query=`sed "s/#AREA/$area_id/g; s/#TAG1/$tag1/g; s/#TAG2/$tag2/g" queries/count_tags.overpassql`
+  namequery=`sed "s/#ID/$p/g" queries/id_to_name.overpassql`
   while [ -z "$counts" ]; do
     counts=$(wget -qO- --post-data="$query" "$server/api/interpreter")
     sleep "$throttle"

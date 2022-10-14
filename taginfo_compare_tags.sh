@@ -55,7 +55,7 @@ while read p; do
   rel_id="$( cut -d ',' -f 1 <<< "$p" )"
   name="$( cut -d ',' -f 2- <<< "$p" )"
   area_id=`expr $base_area + $rel_id`
-  query=`sed "s/#AREA/$area_id/g; s/#TAG1/$tag1/g; s/#TAG2/$tag2/g" queries/count_tags.op`
+  query=`sed "s/#AREA/$area_id/g; s/#TAG1/$tag1/g; s/#TAG2/$tag2/g" queries/count_tags.overpassql`
   while [ -z "$counts" ]; do
     counts=$(wget -qO- --post-data="$query" "$server/api/interpreter")
     sleep "$throttle"

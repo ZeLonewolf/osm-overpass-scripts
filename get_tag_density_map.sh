@@ -132,7 +132,7 @@ while [ "$#" -gt 0 ]; do
 
 
     # Run query
-    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.op`
+    query=`sed "s/#TAG/$tag/g; s/#BBOX/$b/g" ${0%/*}/queries/find_centers.overpassql`
     out="$(curl -s -m 9000 -d "$query" -X POST "$server/api/interpreter")"
 
     
